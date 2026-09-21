@@ -358,6 +358,70 @@ candidate repairs below, so it revises the material **without committing to a
 formalism metamathethicology has not settled** — which the ordering constraint
 requires.
 
+> ### DO NOT BUILD THE GATE AS WRITTEN ABOVE. Corrected 2026-09-21.
+>
+> **The repair is a no-op, and it is a theorem that it is.** If the joint formula
+> is the conjunction of the node's tenets, then conjunction is monotone, so
+> `any base group UNSAT ⇒ joint UNSAT`. Contrapositive: **joint-SAT forces every
+> component individually SAT.** A joint-SAT gate therefore cannot admit any
+> base-UNSAT material — and base-UNSAT is exactly the paradox-holding signature
+> the gate was introduced to admit. The gate collapses back to the classical case
+> it was written to escape.
+>
+> **Not "unsatisfiable" — that overstates it and the difference matters.** The
+> gate is satisfiable; it is satisfied by precisely the classically consistent
+> traditions. It is empty *of the thing it was for*, not empty. So (c)'s
+> dominator structure is untouched — only this admission condition is void.
+>
+> This is a third variant of the pattern this file keeps running into. A
+> constraint that cannot fail is not being checked (the `MetaParadox` test). A
+> constraint that cannot be satisfied is not a gate. And this one: **a repair
+> that silently reduces to the thing it replaced.**
+>
+> **Verified at source 2026-09-21, and it is enforced rather than documented.**
+> `verifier/verify.py:236-256` states the monotonicity argument;
+> `STATIC_REACHABLE_VERDICTS` = {VERIFIED, CONTRADICTION, PARADOX, TIMEOUT} and
+> `PROOF_EVOLUTION_ONLY_VERDICTS` = {MIRROR_PARADOX, SHADOW_PARADOX, BASE_FRAMES,
+> METAPARADOX} (`:256`, `:260`); `check_static_invariant` raises
+> `LatticeInvariantError` and is called live at `:604` and `:707`;
+> `tests/test_static_lattice.py:92-125` checks the partition, sweeps
+> `pytest.raises` over every excluded state, and derives each exclusion from the
+> bits. **That test can fail** — note the contrast with the `MetaParadox` test.
+> `docs/adr/0002-static-lattice-reachability-and-world-ontology.md` (Accepted
+> 2026-08-09) carries the derivation and says it plainly: **the 4/8 split is "a
+> theorem about the static semantics, not a naming convention."**
+>
+> ### The escape is real, it is named in the source, and it costs something
+>
+> ADR 0002, on why the four excluded states are kept at all: *"Monotonicity
+> constrains one formula against its own conjuncts; it says nothing about two
+> formulas separated by a mutation."* The excluded states are reachable under
+> proof-evolution semantics, where base and joint observations come from
+> **different candidate formulas across generations**.
+>
+> **Read into this repository's subject, that forces a substantive claim:** a
+> person holding contradictory tenets is not holding a satisfiable conjunction of
+> them. **The commitment held is a different formula from the conjunction of the
+> tenets stated.** Stated tenets and held commitment are observations of two
+> different candidates. That is not a modelling choice available to us — it is
+> the only opening the machinery leaves, so if paradox-holding is real here, this
+> is what a religion has to be.
+>
+> **And the opening is generational, which is the part worth noticing.** The
+> escape from monotonicity is *mutation across generations* — and generational
+> transmission of narratives is this repository's subject. The machinery's only
+> route to the paradox-holding states runs through the exact process the repo
+> exists to describe. The cost: the admission condition cannot be a predicate on
+> (tradition, node). **It has to be indexed by generation**, which makes the graph
+> (c) is defined over a graph of transmission history rather than of static
+> tenet-sets. That is consistent with the determinism precondition already raised
+> in §4, and it sharpens it rather than adding a new unknown.
+>
+> **Machinery, for whoever builds it:** `logic/proof_evo.py`, not `ppl.py` and not
+> `cycle_detector.py`. **Not built here** — the ordering constraint puts it after
+> metamathethicology, and a generational admission relation is a combination
+> statement, not this field's own subject.
+
 ### The existing structure, verified, and a correction to how it should be used
 
 `[unpublished PPL package]/logic/ppl.py` — **local-only,
@@ -378,21 +442,33 @@ That is the formal signature of a contradiction held paradoxically, already
 written, with the stable/unstable distinction already made. Parts contradict,
 whole holds.
 
-**Caution on citing the eight states as a live lattice — they are not one.**
-`verifier/verify.py:205-211` calls them a *"Legacy eight-state diagnostic
-vocabulary"* and states that ordinary static verification exposes **only the four
-deployment verdicts**; the remaining four names *"are retained for
-partial/proof-evolution diagnostics and must not be inferred from a lossy B/J/C
-bit pattern."* Read plainly: four of the eight states are live, four are retained
-names, and the source explicitly forbids reconstructing them from the three bits.
+**The eight states are not a live lattice, and the 4/4 split is a THEOREM rather
+than a convention.** `verify.py:205-211` calls them a *"Legacy eight-state
+diagnostic vocabulary"* of which static verification exposes only four. The
+derivation and the enforcement were read at source on 2026-09-21 and are set out
+in the corrected gate block in §2 above: monotonicity of conjunction excludes
+`SHADOW_PARADOX (010)` and `MIRROR_PARADOX (011)`, control flow excludes
+`BASE_FRAMES (100)` and `METAPARADOX (000)`, `check_static_invariant` raises on
+all four, and ADR 0002 states that the split *"is a theorem about the static
+semantics, not a naming convention."*
+
+**A trap for anyone checking this: the `Verdict` enum's own visual grouping is
+stale and contradicts the authoritative sets.** The enum lists
+`VERIFIED / CONTRADICTION / PARADOX / MIRROR_PARADOX` as its first block and
+`TIMEOUT / METAPARADOX / SHADOW_PARADOX / BASE_FRAMES` as "additional" — but the
+frozensets put **`MIRROR_PARADOX` in the proof-evolution-only set and `TIMEOUT`
+in the static-reachable set**. The grouping and the sets disagree on exactly
+those two members. **Read `STATIC_REACHABLE_VERDICTS` and
+`PROOF_EVOLUTION_ONLY_VERDICTS`, never the comment blocks.**
 
 This does not touch Tyler's tower, which counts **paradox types** and not this
 package's deployment verdicts — the `8 → 16 → 32` grading is a claim about the
 subject, not about `ppl.py`. But it does mean **PPL cannot be cited as an
-implemented eight-state lattice**, and any arithmetic that starts from "the 8"
-and multiplies must say whether it means the eight named states or the four live
-ones. `SHADOW_PARADOX` and `MIRROR_PARADOX` — the two this section leans on — are
-in the retained half.
+implemented eight-state lattice**, and any arithmetic starting from "the 8" must
+say whether it means the eight named states or the four static-reachable ones.
+`SHADOW_PARADOX` and `MIRROR_PARADOX` — the two this section leans on — are both
+in the proof-evolution-only set, which is now established by the frozensets
+rather than inferred from the enum's stale grouping.
 
 **Correction 1 — do not adopt PPL's names.** The recommendation to "use PPL's
 existing names first" walks into the hazard this file's §3 exists to prevent.
@@ -473,29 +549,50 @@ conditions behind the 4-cycle's 1-hop/3-hop asymmetry. **They are not conditions
 `DEGENERATION_STEP_n` — and `classify_transition` is a lookup with a
 `FIXED_POINTS` fallback. Nothing derives the asymmetry; it is stipulated.
 
-**The consequence is stronger than "it stays a lookup table."** Composing
-transitions in this structure is path-following in a fixed digraph, which is
-associative and has **no measurement operator for order to attach to**. So PPL as
-implemented cannot express order effects — not because its algebra is abelian,
-but because there is no operator algebra at all. If order effects are wanted,
+**The consequence is stronger than "it stays a lookup table," and the reason
+below is a correction to how this was first argued.** The original sentence said
+composition here "is associative and has no measurement operator for order to
+attach to." **The associativity clause was doing no work and could not have** —
+function composition is associative and non-commutative, so associativity alone
+never yields order-independence. The operative reason is the second clause, and
+it is sharper than stated: `_TRANSITION_MAP` is a **classifier over observed
+`(src, dst)` pairs, not an action of operators on states**, so there is nothing
+to compose in the first place. `CycleDetector.classify` takes a
+`Sequence[Verdict]` that already exists (`cycle_detector.py:169`) and every
+helper scans that trace. **The 4-cycle is a pattern detected in histories, not a
+law that generates them** — you cannot run doctrine formation forward in it; it
+can only score a history that something else produced. So PPL as implemented
+cannot express order effects, not because its algebra is abelian, but because
+there is no operator algebra at all. If order effects are wanted,
 they must be *added*, and that is exactly the `b3` coordinate of the graded tower
 above. This closes the probe rather than deferring it.
 
 ### Consequences for the results already stated above
 
-1. **The §2 biconditional survives, restated and weakened in the right
-   direction.** *Convergence holds iff the global **joint-SAT** common ground is
-   non-empty* — not the classical intersection. Since the classical intersection
-   is contained in the joint-SAT common ground, **classical emptiness is weak
-   evidence and not the precondition `SCOPE.md` calls it.** The sharpest risk in
-   the directed goal is weaker still than §2 already made it.
-2. **Classical intersection would be systematically biased, not merely
-   lossy.** Material holdable only in a base-frame-UNSAT/joint-SAT configuration
-   appears in *no* religion's classical tenet set, so it survives no classical
-   intersection. That operator returns the shallow overlap — golden-rule
-   variants, ethical maxims — and discards precisely the paradox-held mysteries
-   that "common tenets amongst religions" is most plausibly after. Under (c)
-   with joint-SAT gates this bias does not arise.
+1. **The §2 biconditional survives, but the qualifier "joint-SAT" must be
+   replaced — see the corrected gate block in §2.** As first written it read
+   *convergence holds iff the global joint-SAT common ground is non-empty*. By
+   the monotonicity theorem a joint-SAT condition forces every component SAT, so
+   that reading admits nothing base-UNSAT and collapses to the classical case.
+   **What survives is the shape, not the qualifier**: convergence holds iff the
+   global common ground is non-empty *under whatever admission relation is
+   adopted*, and classical emptiness is weak evidence rather than the
+   precondition `SCOPE.md` calls it — because the classical intersection is
+   contained in any admission relation that also admits paradox-held material.
+   The relation itself is now open and is named in §4.
+2. **Classical intersection would be systematically biased, not merely lossy —
+   and this survives the correction, conditionally.** Material held only in a
+   base-UNSAT configuration appears in *no* religion's classical tenet set, so it
+   survives no classical intersection. That operator returns the shallow overlap
+   — golden-rule variants, ethical maxims — and discards precisely the
+   paradox-held mysteries that "common tenets amongst religions" is most plausibly
+   after. **The condition:** this bias is real only if base-UNSAT material is
+   reachable at all, which by §2's correction requires the **generational**
+   reading — stated tenets and held commitment as observations of different
+   candidate formulas. Under a static reading there is no such material and no
+   bias, because there is nothing for the classical operator to miss. So this
+   consequence now stands or falls with the generational claim, and it is the
+   strongest practical reason to take that claim seriously.
 3. **WITHDRAWN 2026-09-21. The lead on the limit object does not survive its own
    source.** It read: PPL's stability enum carries `FIXED_POINT = "contradiction
    IS the stable state (deep paradox)"`, `MIRROR_PARADOX` is the stable paradox
@@ -647,9 +744,19 @@ except where noted.
 
 **Reduced to one question** (§2): convergence to a single narrative, and whether
 the common-tenet intersection is empty. These were two entries; they are one.
-Convergence holds iff the global **joint-SAT** common ground is non-empty —
-restated per §2's paradox-holding revision, and no longer a claim about the
-classical intersection.
+Convergence holds iff the global common ground is non-empty — no longer a claim
+about the classical intersection.
+
+**But the admission relation is now itself the open question, and it is the
+sharpest one in this file.** The joint-SAT formulation is void by theorem (§2,
+corrected block). The only opening the machinery leaves is **generational**:
+stated tenets and held commitment are observations of two different candidate
+formulas, separated by mutation across generations. That is forced rather than
+chosen, and it has a price — the admission relation cannot be a predicate on
+(tradition, node); it must be indexed by generation, which makes (c)'s graph one
+of transmission history. **Nothing here establishes that religions work this
+way.** It establishes only that this is the single route the formalism permits,
+so the claim should be stated and argued rather than assumed on the way past.
 
 **RESOLVED 2026-09-21, and it no longer gates a formalism choice.** The question
 was whether PPL's lattice can express **order effects**. It cannot, and the

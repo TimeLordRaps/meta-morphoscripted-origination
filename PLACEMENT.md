@@ -86,6 +86,27 @@ not merely unattractive here; it is structurally unavailable. This repository
 gets content because there is nowhere else the material can go, and that reason
 does not depend on the directed goal being worded as it currently is.
 
+### Independent corroboration of the rule above, from a field that applied it
+
+Found 2026-09-21, after §1 was written and by a different route.
+`hyperlogic/P0_shadow_ground.hm` — a paradox layer written in another repository
+by another session — states the same rule and applies it to a structurally
+identical question:
+
+> **`non-derive nd-p0-shadows-hypermath`** — *"NOT derivable: that this layer
+> instantiates hypermath's P0. Entry conditions, fixed points and barriers all
+> differ. Anything asserting a single P0 theory across fields is a combination
+> claim and belongs in metamathethicology, per the placement rule: a field states
+> its own subject once."*
+
+Two things this buys §1. First, the rule is not my reading of one README — it is
+applied, in a second repository, to refuse a cross-field identification the
+author had every motive to accept. Second, it settles the shape of the refusal:
+the reason given is **not** "this is redundant" but "entry conditions, fixed
+points and barriers all differ," which is the field-local-barrier condition of
+§1 stated independently. That was the weakest joint in §1's argument and it is
+now corroborated rather than assumed.
+
 ### The condition, which is not scheduling
 
 The ordering constraint binds for a reason sharper than queue position, and
@@ -470,8 +491,61 @@ say whether it means the eight named states or the four static-reachable ones.
 in the proof-evolution-only set, which is now established by the frozensets
 rather than inferred from the enum's stale grouping.
 
-**Correction 1 — do not adopt PPL's names.** The recommendation to "use PPL's
-existing names first" walks into the hazard this file's §3 exists to prevent.
+### PPL's standing in the corpus, per Tyler 2026-09-21, and what it changes
+
+Tyler, unprompted, while this section was being written:
+
+> The PPL is the closest form of dealing with paradoxes meta-logically I have
+
+**This raises the stakes of everything in this section rather than lowering
+them.** Read it against the finding above: the closest thing the corpus has to a
+meta-logical treatment of paradox reaches its two paradox states **only
+generationally**, and never in a completed static pass. That is a statement about
+the corpus's paradox capability, not a defect report about one package.
+
+**One qualification, measured.** Tyler added *"hyperlogic might not even have a
+paradox layer yet."* It does — `hyperlogic/P0_shadow_ground.hm`, headed **"Layer
+P0: Paradoxes"** and **"THE SHADOW GROUND. Where contradictions are not errors,
+but generators."** So the accurate division is:
+
+| | what it is | where paradox lives | the gap |
+|---|---|---|---|
+| **PPL** | executable, a solver and a verdict lattice | two named states, `010` and `011` | statically unreachable; needs generational semantics |
+| **the P0 layers** | declarative, one per field | each field's own paradox layer | field-local by construction, and explicitly refuse to be unified |
+
+**Neither covers the other, and that is the real gap.** PPL can be run and cannot
+reach its paradox states without a generational reading. The P0 layers state
+paradox natively and refuse, by `nd-p0-shadows-hypermath`, to be one theory. So
+there is no single meta-logical paradox treatment in the corpus — there is one
+executable one that needs a semantics it does not have, and four declarative ones
+that are barred from being merged. **Nothing in this file closes that**, and it
+is the reason the ordering constraint is right: metamathethicology is where a
+cross-field paradox theory would have to live, and it does not exist yet.
+
+**Correction 1 — do not adopt PPL's names, and the reason has changed.** The
+recommendation to "use PPL's existing names first" walks into the hazard this
+file's §3 exists to prevent.
+
+> **REOPENED 2026-09-21 as a substantive question, not a vocabulary one.** Tyler
+> describes `shadow` and `mirror` as the family's two structural operators:
+> hypermath and hyperlogic *"reflecting mirror-wise"* yielding hyperphysics, and
+> hyperethics as *"the shadow form"* of each of the three. If that is right, then
+> PPL's `SHADOW_PARADOX` and `MIRROR_PARADOX` may not be a third sense colliding
+> with two existing ones — they may be **the same two operators**, showing up in
+> the one place in the corpus where they are executable. `hyperlogic`'s paradox
+> layer being named `P0_shadow_ground` is weak evidence in the same direction.
+>
+> **This does not change the recommendation, and the distinction matters.** Do
+> not adopt the names *on the strength of the resemblance*, because a
+> correspondence that has not been checked is exactly how the six existing
+> collisions happened. What it changes is the **cost of the question**: it is no
+> longer hygiene, and someone should settle it. **What would settle it:** whether
+> PPL's `SHADOW`/`MIRROR` pair stands in the same relation to each other as the
+> corpus's two operators do — PPL's are dual states differing in one bit
+> (convergence), Tyler's are a binary operator on two fields and a unary operator
+> on one. **Those are different arities**, which is evidence against identity and
+> is the first thing to check. Recorded as open; not settled here, and it is a
+> combination question in any case.
 `shadow` and `mirror` are **already load-bearing in four repositories each**, and
 they already carry at least two senses before PPL adds a third:
 

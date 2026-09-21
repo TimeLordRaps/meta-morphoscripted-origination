@@ -269,6 +269,67 @@ The threshold variant maps cleanly too. Replacing strict intersection with
 become `k`-relative. The parameter `SCOPE.md` worries is unchosen becomes an
 explicit index rather than a hidden assumption.
 
+### The entity class corroborates this, and needs one correction
+
+`hyperethics/L1_entity.hm` is the strongest existing connection to the directed
+goal, and it was read directly rather than through a summary. It corroborates
+§2's epistemics more sharply than expected, and it does **not** quite say what
+it is being reported as saying.
+
+**The correction.** The class is substrate-neutral; the **route into it is
+language-bound**, and the gap between those is an open problem named in the file.
+
+- `ax-entity-class` (`:191`): `norm-entity(x) iff (norm-decides(x) and
+  norm-subjectifiable(x))`. Substrate-neutral — it says nothing about what `x`
+  is made of. This part of the claim is right.
+- But the route that admits a *program* is `ax-subjectify-via-tom` (`:202`), and
+  it is **sufficient, not necessary** — deliberately so. It runs through
+  `ax-tom-via-language` (`:218`): `norm-tom-representable(x) implies
+  norm-linguistic(x)`, which the file itself calls "the layer's substantive
+  assumption, and the one most worth attacking."
+- `nd-nonlinguistic-subjectification` (`:455`) is **OPEN**: is there a first
+  perspective language does not carry? The file is explicit that "the class does
+  not exclude it. The **MECHANIZATION does not reach it**."
+
+So "a tenet quantifying over entities already has AI in its domain, and no
+adaptation is needed" is **sound for the class and not executable by the
+mechanization**. Showing that a particular AI or singularitian *is* an entity
+travels the one built route, which is linguistic. The abstract quantifier
+transfers for free; the membership certificate does not.
+
+**The sorting test therefore has three buckets, not two:**
+
+1. Tenet quantifies over **entities** — transfers, *given* the target is
+   certified an entity.
+2. Tenet quantifies over **humans** — adaptation needed; the question is whether
+   the human-restriction is load-bearing or incidental.
+3. **The certification gap** — an entity-quantifying tenet still needs its target
+   shown to *be* an entity, and for a non-linguistic candidate no route exists.
+   This bucket bears hardest on the third adaptation target, **the nature of
+   reality itself**, which is not obviously a decision-making object and not
+   obviously subjectifiable through language.
+
+**The corroboration, which is the more interesting half.** The entity class has
+*exactly the epistemics §2 argues the anchor points need*:
+
+| | entity class | anchor point (§2) |
+|---|---|---|
+| the property | global, stated as an `iff` | global, quantifies over all paths |
+| what is executable | a **sufficient** condition (`ax-subjectify-via-tom`) | a **local certificate** over the observer's cone |
+| completeness | sound, not complete — misses non-linguistic perspectives | sound, not complete — misses unreachable coalitions |
+| direction of failure | under-reports membership | under-reports anchors |
+| the gap | `nd-nonlinguistic-subjectification`, open | observer-relativity, open |
+
+This was not built to match. `L1_entity.hm` predates this file and was written
+about a different subject. That the family's one existing substrate-neutral
+class already pays for its global definition with a sound-but-incomplete local
+certificate is **independent evidence that §2's shape is the right one for this
+corpus** — and it is evidence of a kind that (b') cannot produce, because (b')
+has no local certificate at all.
+
+**Not built here.** The sorting test is downstream work and the ordering
+constraint holds. It is recorded because it bears on the choice already made.
+
 ---
 
 ## 3. Vocabulary: the collision check was run on every term, and it found two
@@ -384,6 +445,12 @@ Choosing (c) is what raised it.
 - The reality taxonomy (areality, surreality, preality, N-d universal base
   reality) is formalised nowhere. `SCOPE.md` calls it a dependency, not a
   resource. Unchanged.
+- **`nd-nonlinguistic-subjectification`** (`L1_entity.hm:455`) is open in
+  `hyperethics`, and this repository inherits it rather than raising it. Until
+  it closes, the entity class admits non-linguistic entities in principle while
+  the mechanization can certify none, so the adaptation programme's third bucket
+  (§2) has no procedure. This is a dependency on a field that has named the
+  problem and not solved it — not a gap this repository can close on its own.
 
 **Opened by the decision in §2:**
 

@@ -369,13 +369,30 @@ from the file on 2026-09-21, not taken from a summary.
   joint SAT, no convergence"* (`:159`). `MIRROR_PARADOX (011)`: same signature
   *with* convergence (`:169`). Dual to `BASE_FRAMES (100)`, annotated *parts vs
   emergent whole* (`:157`).
-- Five meta-paradoxes (`:232`), driving `SHADOW → MIRROR` in one hop (`:187`).
+- Five meta-paradoxes (`:232`), annotated as driving `SHADOW → MIRROR` in one hop
+  (`:187`). **Annotated, not implemented** — see Consequence 4 below.
 - A degeneration 4-cycle (`:190`), asymmetric: convergence one hop, degeneration
-  three.
+  three. **Stipulated as four dictionary entries** (`cycle_detector.py:75-81`).
 
 That is the formal signature of a contradiction held paradoxically, already
 written, with the stable/unstable distinction already made. Parts contradict,
 whole holds.
+
+**Caution on citing the eight states as a live lattice — they are not one.**
+`verifier/verify.py:205-211` calls them a *"Legacy eight-state diagnostic
+vocabulary"* and states that ordinary static verification exposes **only the four
+deployment verdicts**; the remaining four names *"are retained for
+partial/proof-evolution diagnostics and must not be inferred from a lossy B/J/C
+bit pattern."* Read plainly: four of the eight states are live, four are retained
+names, and the source explicitly forbids reconstructing them from the three bits.
+
+This does not touch Tyler's tower, which counts **paradox types** and not this
+package's deployment verdicts — the `8 → 16 → 32` grading is a claim about the
+subject, not about `ppl.py`. But it does mean **PPL cannot be cited as an
+implemented eight-state lattice**, and any arithmetic that starts from "the 8"
+and multiplies must say whether it means the eight named states or the four live
+ones. `SHADOW_PARADOX` and `MIRROR_PARADOX` — the two this section leans on — are
+in the retained half.
 
 **Correction 1 — do not adopt PPL's names.** The recommendation to "use PPL's
 existing names first" walks into the hazard this file's §3 exists to prevent.
@@ -392,6 +409,37 @@ Importing PPL's names here would make these the **ninth and tenth** collision
 words, and they would collide with a **user-declared** sense, which is the worst
 kind to break. **Cite PPL's states by their numeric codes and signature
 ("base-frame UNSAT, joint SAT") rather than by the words `shadow` and `mirror`.**
+
+**SUPERSEDED 2026-09-21 by Tyler's declaration, and the supersession applies to
+Correction 2 below and to the recommendation it argued against.** Verbatim:
+
+> tHE 8 ARE CLASSICAL PARADOXES, THERE ARE 16 WHEN QUANTUM PARADOXES ARE
+> INVOKED. 32 WITH POSSIBILITY PARADOXES AND MORE LATER, WE JUST NEED QUANTUM
+> FOR COGNITION DOCTRINATION FORMATION OF RELIGIOUS CONVERGENCE STATES
+
+The lattice is **graded**, not in need of repair: `Z2^3` classical, `Z2^4`
+quantum, `Z2^5` possibility. You extend by adding a **coordinate**, not by
+weakening the logic over a fixed state space. Both "drop distributivity" and the
+counter-argument below were framed as repairs, and that framing is wrong for
+both.
+
+**What survives, and it is the substance rather than the framing.** Correction 2
+distinguishes a composition phenomenon from a measurement phenomenon. The tower
+does not dissolve that distinction — it **encodes it as the coordinate**, with
+the composition phenomenon at `b3=0` and the measurement phenomenon at `b3=1`.
+It also answers the prior question Correction 2 raised, "is the quantum half
+wanted at all," with a *yes* and a stated purpose: doctrine formation of
+religious convergence states. The question was well posed; the repair framing
+around it was not.
+
+**Consequence for the objection itself: the intersection is not ill-typed, it is
+PROJECTED.** Classical intersection computes the `b3=0` slice and discards
+`b3=1` silently. It returns an answer, and the answer is a shadow of the
+question. That is a cleaner result than either repair, and it leaves the
+dominator structure of §2 intact — as does everything in this subsection.
+
+Correction 2 is retained below because its distinction is what the grading
+encodes, and because a later reader should see what the tower replaced.
 
 **Correction 2 — paraconsistency and quantum structure are different repairs,
 and the objection names the first while gesturing at the second.**
@@ -414,14 +462,24 @@ move *if* it is — but it should not be spent repairing a problem that is not t
 one Tyler named. **If paradox-holding is the requirement, PPL suffices and no
 quantum formalism is needed.**
 
-**On whether PPL can express order effects — the open question, narrowed.** The
-`Z2^3` XOR algebra (`:192`) is abelian, but it is used to *locate* the
-intermediate state on the degeneration path, **not to compose transitions**, so
-it neither supplies nor forbids order effects. The 4-cycle's 1-hop/3-hop
-asymmetry is a genuine directional asymmetry and it lives in the **meta-paradox
-and meta-mirror firing conditions**, not in the state algebra. That is where to
-look, and it is the only place worth looking, before anyone reaches for a
-Hilbert space. Not read here; flagged as the next concrete probe.
+**On whether PPL can express order effects — the probe was run 2026-09-21, and
+the answer is no, for a more basic reason than the algebra.** The `Z2^3` XOR
+algebra (`:192`) is abelian, but it is used to *locate* the intermediate state on
+the degeneration path, **not to compose transitions**, so it neither supplies nor
+forbids order effects — that much stands. The probe was to read the firing
+conditions behind the 4-cycle's 1-hop/3-hop asymmetry. **They are not conditions.**
+`_TRANSITION_MAP` (`cycle_detector.py:75-81`) is a four-entry dictionary keyed on
+`(source, destination)` verdict pairs — one `CONVERGENCE`, three
+`DEGENERATION_STEP_n` — and `classify_transition` is a lookup with a
+`FIXED_POINTS` fallback. Nothing derives the asymmetry; it is stipulated.
+
+**The consequence is stronger than "it stays a lookup table."** Composing
+transitions in this structure is path-following in a fixed digraph, which is
+associative and has **no measurement operator for order to attach to**. So PPL as
+implemented cannot express order effects — not because its algebra is abelian,
+but because there is no operator algebra at all. If order effects are wanted,
+they must be *added*, and that is exactly the `b3` coordinate of the graded tower
+above. This closes the probe rather than deferring it.
 
 ### Consequences for the results already stated above
 
@@ -438,17 +496,49 @@ Hilbert space. Not read here; flagged as the next concrete probe.
    variants, ethical maxims — and discards precisely the paradox-held mysteries
    that "common tenets amongst religions" is most plausibly after. Under (c)
    with joint-SAT gates this bias does not arise.
-3. **A lead on the limit object, flagged not asserted.** PPL's stability enum
-   carries `FIXED_POINT = "contradiction IS the stable state (deep paradox)"`,
-   and `MIRROR_PARADOX` is the *stable* paradox state. §2 assigns (a), the fixed
-   point, to the limit — the single memetically supported narrative. If both
-   readings hold, **the limit object is a contradiction held stably as mystery**,
-   which is a substantive and falsifiable prediction about what the single
-   narrative would be, arrived at from two directions that were not built to
-   meet. Recorded as a lead. Nothing here establishes it.
-4. **Doctrine formation and schism have candidate mechanisms already written.**
-   The five meta-paradoxes drive unstable → stable, and the degeneration 4-cycle
-   runs stable → unstable. Not to be reinvented here.
+3. **WITHDRAWN 2026-09-21. The lead on the limit object does not survive its own
+   source.** It read: PPL's stability enum carries `FIXED_POINT = "contradiction
+   IS the stable state (deep paradox)"`, `MIRROR_PARADOX` is the stable paradox
+   state, §2 assigns (a) — the fixed point — to the limit, so the limit object
+   would be a contradiction held stably as mystery. **Two readings of the file
+   kill it, and they are independent:**
+
+   - `FIXED_POINT` is **two different objects**. `AttractorState.FIXED_POINT`
+     (`ppl.py:285`) is one; `TransitionType.FIXED_POINT` and the module constant
+     `FIXED_POINTS: frozenset[Verdict]` (`cycle_detector.py:70`, `:54`) are
+     another. The lead silently identified them.
+   - Under the implemented cycle notion, **`MIRROR_PARADOX` is not a fixed point
+     at all.** `cycle_detector.py:54-59` enumerates them: `VERIFIED (111)`,
+     `METAPARADOX (000)`, `CONTRADICTION (001)`, `BASE_FRAMES (100)`. `MIRROR` is
+     absent — it is a cycle member that degenerates in three hops
+     (`_TRANSITION_MAP`, `:75-81`). And under the *other* notion,
+     `AttractorState.FIXED_POINT` is glossed in the moral domain as *"They do not
+     resolve. They do not evolve. They terminate."* (`:121`), which is the
+     opposite of `MIRROR`'s stable-with-convergence signature. Neither notion
+     supports the identification.
+
+   **What replaces it is a sharper question, not a gap.** If (a)'s limit is a
+   fixed point, and the implemented fixed points are those four, then the limit
+   is one of *those* — and the live candidates are the lattice poles,
+   `VERIFIED (111)` and `METAPARADOX (000)`. Whether the single memetically
+   supported narrative converges on *verified by every frame* or on *paradoxical
+   in every frame* is a real question with two named answers. It is not settled
+   here and nothing above bears on it.
+4. **CORRECTED 2026-09-21. Doctrine formation and schism have candidate
+   mechanisms *named*, not written.** The claim as committed at `305cd1f` said
+   "already written" and that is too strong. Measured: `MetaParadox` (`ppl.py:232`)
+   is imported in exactly one place, `tests/test_ppl.py:19`, and the test that
+   uses it (`:72-79`) asserts only `len(MetaParadox) == 5` and that each of the
+   five members `is not None`. **That is an existence check that cannot fail
+   unless a member is deleted.** No transition function, no verdict path and no
+   cycle rule consumes it; `_TRANSITION_MAP` (`cycle_detector.py:75-81`) is four
+   stipulated entries that never mention it.
+
+   This is the corpus's own anti-pattern, applied to the corpus: *a constraint
+   that cannot fail is not being checked.* So the five meta-paradoxes are a
+   vocabulary with a passing test, and the degeneration 4-cycle is a lookup
+   table. **Still not to be reinvented — the names are good and the slots are the
+   right slots — but anyone citing them as a mechanism is citing an enum.**
 
 ---
 
@@ -490,24 +580,37 @@ specification calls a frame is, formally, the local-certificate procedure of §2
 
 ### `anchor` — the eighth word
 
-`hypermath` uses `anchor` **16 times, load-bearing**, and it means
-*name-binding to ground*:
+**REVISED 2026-09-21 — this was measured again and the first measurement
+understated it.** The earlier text read *"`hypermath` uses `anchor` 16 times,
+load-bearing, and it means name-binding to ground."* The count is right; the
+singular *"it means"* is wrong. `hypermath` uses `anchor` in **five mutually
+unrelated senses**, none of which is the specification's:
 
-- `docs/terms/definition.md:7` — *"`definition` is the anchoring act that makes
-  a form derivable by name."*
-- `L1_relations.hm:236` — *"syntax is the relation-level anchor: x has a
-  derivation chain reachable [from ground]."*
-- `ground anchoring` is a closure predicate in four research documents.
+| # | sense | where | what it anchors |
+|---|---|---|---|
+| 1 | **definitional** | `docs/terms/definition.md:7`, `:14` | *"the anchoring act that makes a form derivable by name"*; *"First Form: the name anchor"* |
+| 2 | **relation-level** | `L1_relations.hm:236` | *"syntax is the relation-level anchor: x has a derivation chain reachable [from ground]"* |
+| 3 | **ground anchoring** (closure predicate) | `FRACTAL_COMPLETENESS.md:224`, `NATIVE_ACCEPTANCE.md:14`, `RECORD_ENCODING.md:128` | a value to ground, as a checkable condition |
+| 4 | **provenance / commit** | `CHANGELOG.md:1635`, `CLAUSE_INDEPENDENCE.md:2821` | *"the precursor, which is anchored by the commit it forked from"* |
+| 5 | **cross-repository semantic** | `CONSTRUCTIVE_QUINE_SELF_CLOSURE.md:100` | *"Path 2 anchors Hypermath's relation semantics directly into"* another repository |
 
-The specification's "anchor point" means a **waypoint on a path**. hypermath's
-anchor means **a name bound to the source**. The senses are close enough to be
-confused and different enough to be wrong, which `VOCABULARY_BOUNDARY.md`
-identifies as the worst case.
+A **sixth** sense arrives through a public dependency: the vendored
+`verifier-standard` specifications use `anchor` for an *external transparency
+anchor* (`VSTD-3` §11, `AnchorProvider`, `external_anchor_id`) — a third-party
+attestation of a rolling root, unrelated to all five above.
 
-**Recommendation:** `anchor point` stays as the display name, because it is
-Tyler's phrase and it is in the repository's specification. The **formal** name
-is `dominator`, which is standard, has published mathematics behind it, and
-collides with nothing here.
+The specification's "anchor point" means a **waypoint on a path**, which would be
+a seventh. That is worse than a collision with one sense: **the word is already
+doing so much work that a reader has no default reading to fall back on**, and
+`VOCABULARY_BOUNDARY.md` identifies close-but-different as the worst case.
+
+**Recommendation, unchanged and now better supported:** `anchor point` stays as
+the display name, because it is Tyler's phrase and it is in the repository's
+specification. The **formal** name is `dominator`, which is standard, has
+published mathematics behind it, and collides with nothing here. The five-sense
+measurement does not change the recommendation — it removes the alternative of
+treating `anchor` as formal, which was never taken but was never ruled out this
+firmly either.
 
 ### One soft collision and one near-miss, disclosed
 
@@ -548,13 +651,19 @@ Convergence holds iff the global **joint-SAT** common ground is non-empty —
 restated per §2's paradox-holding revision, and no longer a claim about the
 classical intersection.
 
-**Unresolved, and it gates a formalism choice:** whether PPL's lattice can
-express **order effects**. Its `Z2^3` XOR algebra locates states rather than
-composing transitions, so it settles nothing either way; the 1-hop/3-hop
-asymmetry lives in the meta-paradox and meta-mirror firing conditions, which
-have not been read. If it can, no quantum formalism is needed here at all. **Do
-not drop distributivity before this is settled** — and note that the phenomenon
-Tyler named is paraconsistent rather than quantum, so it may not need settling.
+**RESOLVED 2026-09-21, and it no longer gates a formalism choice.** The question
+was whether PPL's lattice can express **order effects**. It cannot, and the
+reason is more basic than the algebra: `_TRANSITION_MAP` (`cycle_detector.py:75-81`)
+is four stipulated dictionary entries, so composing transitions is path-following
+in a fixed digraph and **there is no measurement operator for order to attach
+to**. The `Z2^3` XOR algebra was a red herring in both directions.
+
+The standing advice *"do not drop distributivity before this is settled"* is
+**withdrawn as the wrong frame**, not because it was answered the other way.
+Tyler's declaration makes the structure a graded tower, so order effects are
+added at the `b3` coordinate rather than obtained by weakening anything § 2 or
+this section relies on. What survives is the caution's substance: **nothing in
+PPL supplies order effects, so anything that needs them needs new material.**
 
 **Changed status — now a precondition, not a background question:** whether the
 morph operator is **deterministic**. Dominators are defined over a fixed edge

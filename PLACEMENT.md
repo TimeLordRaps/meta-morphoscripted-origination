@@ -438,8 +438,53 @@ requires.
 > tenet-sets. That is consistent with the determinism precondition already raised
 > in §4, and it sharpens it rather than adding a new unknown.
 >
-> **Machinery, for whoever builds it:** `logic/proof_evo.py`, not `ppl.py` and not
-> `cycle_detector.py`. **Not built here** — the ordering constraint puts it after
+> **CORRECTED 2026-09-21, a few hours after the above was committed. THERE IS NO
+> MACHINERY.** The line here read: *"Machinery, for whoever builds it:
+> `logic/proof_evo.py`, not `ppl.py` and not `cycle_detector.py`."* That was
+> inferred from ADR 0002 and `verify.py` naming proof-evolution as the regime —
+> **inferred, not read.** Reading it:
+>
+> - `proof_evo.py` is 1,155 lines of genuine evolutionary proof search —
+>   `MutationOp`, a UCB `MutationBandit`, `_mutate`, `_crossover`,
+>   `_tournament_select`, `_diversity_score`, `evolve`. Real machinery, not an
+>   enum. But its output type is `ProofStatus` = {`PROVED`, `REFUTED`,
+>   `UNRESOLVED`, `EVOLVING`}. **It never assigns a `Verdict`, and contains zero
+>   occurrences of the four excluded verdicts.**
+> - **Nothing in the package produces them.** `verify.py` refuses to emit them by
+>   the enforced invariant; `ppl.py` mentions `SHADOW_PARADOX` and
+>   `MIRROR_PARADOX` only in comments and one docstring (`:155-177`, `:237`);
+>   `cycle_detector.py` pattern-matches them inside a `trace` it is handed
+>   (`:216-256`); `training/salience.py` assigns them weights. All consumers.
+> - **Every trace in the test suite is a hand-written literal** —
+>   `tests/test_cycle_detector.py:143-246` is `[S, M, P, T, S]` and friends.
+>   `CycleDetector.classify` consumes a `Sequence[Verdict]` that **no producer
+>   anywhere constructs.**
+>
+> **So the escape is named in the source and not implemented, and this correction
+> is the same shape as the one it is correcting.** The block above replaced an
+> unsatisfiable gate with an escape route — and the escape route has the identical
+> defect one level down. Fourth instance in this file of one pattern: a constraint
+> that cannot fail, a constraint that cannot be satisfied, a repair that reduces
+> to what it replaced, and now **a mechanism that is named where it is needed and
+> absent where it would run.**
+>
+> **What survives, and it is the load-bearing half.** ADR 0002's reasoning is a
+> mathematical observation, not an implementation claim: monotonicity constrains
+> one formula against its own conjuncts and says nothing about two formulas
+> separated by a mutation. That is true whether or not anyone coded it. **So the
+> generational reading remains the only logically available route to
+> paradox-holding**, and every consequence drawn from it above stands. What fails
+> is only the claim that machinery for it exists.
+>
+> **The gap is specific and worth naming precisely, because it is small.**
+> `ProofNode` already carries `generation: int` and the mutation engine is real,
+> so the *generational structure* exists. What is missing is a single map: nothing
+> takes a `ProofNode` at generation N to a `Verdict`. That map is exactly what
+> would produce the trace `cycle_detector.classify` is built to consume and never
+> receives. **One missing function connects two working halves** — which is the
+> most useful thing this file can say to whoever builds it.
+>
+> **Still not built here.** The ordering constraint puts it after
 > metamathethicology, and a generational admission relation is a combination
 > statement, not this field's own subject.
 

@@ -527,9 +527,29 @@ in the static-reachable set**. The grouping and the sets disagree on exactly
 those two members. **Read `STATIC_REACHABLE_VERDICTS` and
 `PROOF_EVOLUTION_ONLY_VERDICTS`, never the comment blocks.**
 
-This does not touch Tyler's tower, which counts **paradox types** and not this
-package's deployment verdicts — the `8 → 16 → 32` grading is a claim about the
-subject, not about `ppl.py`. But it does mean **PPL cannot be cited as an
+**CORRECTED 2026-09-21. As committed, this paragraph asserted that the finding
+"does not touch Tyler's tower, which counts paradox types and not this package's
+deployment verdicts." That is stated as settled and it is not settled** — it is
+the single assumption the whole section rests on, and it was asserted on the
+weaker side of the evidence. Tyler's verbatim was *"tHE 8 ARE CLASSICAL
+PARADOXES, THERE ARE 16 WHEN QUANTUM PARADOXES ARE INVOKED. 32 WITH POSSIBILITY
+PARADOXES AND MORE LATER."* Read as *the 8 [states] are [the] classical
+paradoxes*, it identifies his eight **with** this package's verdict lattice; read
+as an enumeration of paradox types, it does not. The circumstantial evidence
+favours identification: the definite article, the statement landing in a
+discussion of this lattice, `8 → 16 → 32` being exactly its `Z2^n` doubling, and
+*"convergence states"* naming its `C` bit.
+
+**The two branches give different results, which is why it cannot be waved past.**
+If the tower counts paradox types, the static-unreachability finding is a fact
+about one package. If the tower **is** this lattice, the finding lands on the
+tower directly: two of the eight classical states are statically unreachable, and
+the `b3` extension inherits that, because adding a coordinate does not repair the
+`b3 = 0` slice it extends. **Settle by asking Tyler, not by inferring**
+(`GC-PLT-8`). Until then, nothing in this file should be read as having
+established either branch.
+
+What does **not** depend on the branch: **PPL cannot be cited as an
 implemented eight-state lattice**, and any arithmetic starting from "the 8" must
 say whether it means the eight named states or the four static-reachable ones.
 `SHADOW_PARADOX` and `MIRROR_PARADOX` — the two this section leans on — are both
@@ -917,6 +937,15 @@ Choosing (c) is what raised it.
   (§2) has no procedure. This is a dependency on a field that has named the
   problem and not solved it — not a gap this repository can close on its own.
 
+**Unsettled, and it underlies §"PPL's standing" entirely:** whether Tyler's
+"8 classical paradoxes" **are** this package's eight `Verdict` states or an
+independent enumeration of paradox types. This file asserted the second and has
+been corrected to state it as open (§"PPL's standing", corrected block). It is
+answerable in one question to Tyler and should not be inferred from the corpus
+(`GC-PLT-8`). Both branches are live; they differ in whether the
+static-unreachability finding is a fact about one package or a fact about the
+tower.
+
 **Opened by the decision in §2:**
 
 - **Observer-relativity of the anchor set.** The local certificate is sound but
@@ -950,3 +979,22 @@ may name them.
 The artefacts cited in `metamathethicology` and `hyperethics` are **uncommitted**
 in their own working trees, per `p0_barrier.hm`'s `nd-p0-is-committed`. Anyone
 treating this file's citations as repository state is reading a plan as a fact.
+
+**The same warning applies to this file.** As of 2026-09-21 this repository has
+**seven commits on `main` that have never been pushed** (`f66fd97`, `9358dfc`,
+`305cd1f`, `2562292`, `be4e7ef`, `719585b`, `88d0d22`) and the working tree is
+clean. So this file exists on one disk only, and nothing here is recoverable from
+the remote. **Pushing is Tyler's decision and has not been made** — it is
+recorded here rather than left in a conversation so that it survives the
+conversation.
+
+**Open, and Tyler's to answer rather than mine to infer** — the complete list, so
+that it does not have to be reconstructed:
+
+1. **Push or don't** (above).
+2. **`GC-PLT-8`** (§4): are Tyler's "8 classical paradoxes" this package's eight
+   `Verdict` states, or an independent enumeration of paradox types? One
+   question, two live branches, and §"PPL's standing" changes meaning either way.
+
+Everything else this file leaves open is a research gap, not a decision — §4
+lists those separately and none of them is waiting on an answer from anyone.

@@ -330,6 +330,126 @@ has no local certificate at all.
 **Not built here.** The sorting test is downstream work and the ordering
 constraint holds. It is recorded because it bears on the choice already made.
 
+### Paradox-holding: the material is revised, the structure is not
+
+Objection from Tyler, 2026-09-21, verbatim:
+
+> contradictions can be held paradoxically by people though so Im not sure your
+> intersection is operating quantum mechanically enough
+
+**Accepted, and it is the strongest objection on record** — stronger than the
+empty-intersection risk `SCOPE.md` names. Set intersection presupposes that each
+religion's tenets form a consistent set and that "holds tenet P" is two-valued.
+Paradox-holding is the failure of that presupposition, so the operator is
+**ill-typed**, not merely at risk of returning empty.
+
+**Where it lands.** On (b'), fatally — the intersection *is* the anchor there, so
+an ill-typed operator leaves no anchors. On (c), as a revision to the **material
+at the nodes**, not to the structure. Dominators are defined on a graph; the
+graph does not care what logic the admission condition is written in. So this is
+now the **third independent failure of (b')**, after non-discoverability and the
+static/trajectory mismatch, and it is a revision of (c) rather than a defeat.
+
+**The repair, and it is smaller than adopting a logic.** Recast the admission
+condition from *classical containment* to **joint satisfiability**: a tradition
+enters a coalition when it can reach a joint-SAT holding of the node's material,
+not when it classically contains those tenets. That is neutral between the two
+candidate repairs below, so it revises the material **without committing to a
+formalism metamathethicology has not settled** — which the ordering constraint
+requires.
+
+### The existing structure, verified, and a correction to how it should be used
+
+`[unpublished PPL package]/logic/ppl.py` — **local-only,
+50 commits; its configured remote does not resolve on GitHub, so treat it as
+UNPUBLISHED** and name it only in private files. Every claim below was read
+from the file on 2026-09-21, not taken from a summary.
+
+- Eight verdict states over `Z2^3`. `SHADOW_PARADOX (010)`: *"base-frame UNSAT,
+  joint SAT, no convergence"* (`:159`). `MIRROR_PARADOX (011)`: same signature
+  *with* convergence (`:169`). Dual to `BASE_FRAMES (100)`, annotated *parts vs
+  emergent whole* (`:157`).
+- Five meta-paradoxes (`:232`), driving `SHADOW → MIRROR` in one hop (`:187`).
+- A degeneration 4-cycle (`:190`), asymmetric: convergence one hop, degeneration
+  three.
+
+That is the formal signature of a contradiction held paradoxically, already
+written, with the stable/unstable distinction already made. Parts contradict,
+whole holds.
+
+**Correction 1 — do not adopt PPL's names.** The recommendation to "use PPL's
+existing names first" walks into the hazard this file's §3 exists to prevent.
+`shadow` and `mirror` are **already load-bearing in four repositories each**, and
+they already carry at least two senses before PPL adds a third:
+
+| sense | where | what it is |
+|---|---|---|
+| **user-declared**, cross-field | `definitional_shadow.hm:44` — *"hyperphysics self-derivational chain is a mirror of hypermaths, and hyperethics is a shadow of hypermaths"* | a relation between whole repositories |
+| layer object | `hyperethics/P0_shadow_ground.hm` — `ShadowForm`, `ShadowOf` | the field's own oppositions, below L0 |
+| verdict state | PPL | 2 of 8 states in a lattice |
+
+Importing PPL's names here would make these the **ninth and tenth** collision
+words, and they would collide with a **user-declared** sense, which is the worst
+kind to break. **Cite PPL's states by their numeric codes and signature
+("base-frame UNSAT, joint SAT") rather than by the words `shadow` and `mirror`.**
+
+**Correction 2 — paraconsistency and quantum structure are different repairs,
+and the objection names the first while gesturing at the second.**
+
+| repair | what fails | what it models |
+|---|---|---|
+| **paraconsistent** | explosion (*ex falso quodlibet*) | holding `P` and `¬P` without collapse |
+| **quantum / orthomodular** | **distributivity** | superposition, complementarity, **order effects** |
+
+"Contradictions held paradoxically" is the paraconsistent phenomenon. PPL's
+signature — parts UNSAT, whole SAT, dual-annotated *parts vs emergent whole* — is
+a **composition** property, so PPL answers the phenomenon actually named.
+Quantum cognition's signature results (order effects, conjunction fallacy,
+violations of total probability) are about **sequential measurement**, which is a
+different thing.
+
+So the prior question is not "orthomodular or Hilbert space." It is **whether the
+quantum half is wanted at all.** Dropping distributivity is indeed the minimal
+move *if* it is — but it should not be spent repairing a problem that is not the
+one Tyler named. **If paradox-holding is the requirement, PPL suffices and no
+quantum formalism is needed.**
+
+**On whether PPL can express order effects — the open question, narrowed.** The
+`Z2^3` XOR algebra (`:192`) is abelian, but it is used to *locate* the
+intermediate state on the degeneration path, **not to compose transitions**, so
+it neither supplies nor forbids order effects. The 4-cycle's 1-hop/3-hop
+asymmetry is a genuine directional asymmetry and it lives in the **meta-paradox
+and meta-mirror firing conditions**, not in the state algebra. That is where to
+look, and it is the only place worth looking, before anyone reaches for a
+Hilbert space. Not read here; flagged as the next concrete probe.
+
+### Consequences for the results already stated above
+
+1. **The §2 biconditional survives, restated and weakened in the right
+   direction.** *Convergence holds iff the global **joint-SAT** common ground is
+   non-empty* — not the classical intersection. Since the classical intersection
+   is contained in the joint-SAT common ground, **classical emptiness is weak
+   evidence and not the precondition `SCOPE.md` calls it.** The sharpest risk in
+   the directed goal is weaker still than §2 already made it.
+2. **Classical intersection would be systematically biased, not merely
+   lossy.** Material holdable only in a base-frame-UNSAT/joint-SAT configuration
+   appears in *no* religion's classical tenet set, so it survives no classical
+   intersection. That operator returns the shallow overlap — golden-rule
+   variants, ethical maxims — and discards precisely the paradox-held mysteries
+   that "common tenets amongst religions" is most plausibly after. Under (c)
+   with joint-SAT gates this bias does not arise.
+3. **A lead on the limit object, flagged not asserted.** PPL's stability enum
+   carries `FIXED_POINT = "contradiction IS the stable state (deep paradox)"`,
+   and `MIRROR_PARADOX` is the *stable* paradox state. §2 assigns (a), the fixed
+   point, to the limit — the single memetically supported narrative. If both
+   readings hold, **the limit object is a contradiction held stably as mystery**,
+   which is a substantive and falsifiable prediction about what the single
+   narrative would be, arrived at from two directions that were not built to
+   meet. Recorded as a lead. Nothing here establishes it.
+4. **Doctrine formation and schism have candidate mechanisms already written.**
+   The five meta-paradoxes drive unstable → stable, and the degeneration 4-cycle
+   runs stable → unstable. Not to be reinvented here.
+
 ---
 
 ## 3. Vocabulary: the collision check was run on every term, and it found two
@@ -424,7 +544,17 @@ except where noted.
 
 **Reduced to one question** (§2): convergence to a single narrative, and whether
 the common-tenet intersection is empty. These were two entries; they are one.
-Convergence holds iff the global intersection is non-empty.
+Convergence holds iff the global **joint-SAT** common ground is non-empty —
+restated per §2's paradox-holding revision, and no longer a claim about the
+classical intersection.
+
+**Unresolved, and it gates a formalism choice:** whether PPL's lattice can
+express **order effects**. Its `Z2^3` XOR algebra locates states rather than
+composing transitions, so it settles nothing either way; the 1-hop/3-hop
+asymmetry lives in the meta-paradox and meta-mirror firing conditions, which
+have not been read. If it can, no quantum formalism is needed here at all. **Do
+not drop distributivity before this is settled** — and note that the phenomenon
+Tyler named is paraconsistent rather than quantum, so it may not need settling.
 
 **Changed status — now a precondition, not a background question:** whether the
 morph operator is **deterministic**. Dominators are defined over a fixed edge

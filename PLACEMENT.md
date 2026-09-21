@@ -976,9 +976,44 @@ is re-runnable. `hypermath`, `hyperlogic`, `taxonomy-of-deception` and
 before any path or repository name was written here. This file is private and
 may name them.
 
-The artefacts cited in `metamathethicology` and `hyperethics` are **uncommitted**
-in their own working trees, per `p0_barrier.hm`'s `nd-p0-is-committed`. Anyone
-treating this file's citations as repository state is reading a plan as a fact.
+**CORRECTED 2026-09-21, and it was understated in both scope and severity.** This
+paragraph said the artefacts cited in `metamathethicology` and `hyperethics` are
+"uncommitted in their own working trees." Measured, by `git ls-files` per file on
+2026-09-21: **five of the eight externally cited artefacts are UNTRACKED — in no
+commit at all**, which is not the same as tracked-and-modified, and the repos are
+four, not two.
+
+| cited artefact | state |
+|---|---|
+| `hyperlogic/P0_shadow_ground.hm` | **untracked** |
+| `metamathethicology/paradox_lattice_tower.hm` | **untracked** |
+| `metamathethicology/definitional_shadow.hm` | **untracked** |
+| `metamathethicology/p0_barrier.hm` | **untracked** |
+| `hyperethics/L1_entity.hm` | **untracked** |
+| `[unpublished PPL package]/.../verify.py` | tracked, clean, pushed |
+| `[unpublished PPL package]/.../cycle_detector.py` | tracked, clean, pushed |
+| `[unpublished PPL package]/docs/adr/0002-*.md` | tracked, clean, pushed |
+
+**The pattern is corpus-wide, not specific to this file's citations.** Across the
+five fields, top-level `.hm` files on disk versus tracked: `hyperlogic` 2/1,
+`metamathethicology` 4/1, `hyperethics` 5/2, `hypermath` 4/4, `hyperphysics` 1/1.
+**Eight of sixteen are in no commit**, and they are the newest layers — the P0
+set, `L1_entity`, `definitional_shadow`, `paradox_lattice_tower`.
+
+**Two consequences for reading this file.** First, §1's independent corroboration
+(`nd-p0-shadows-hypermath`) is quoted from an untracked file, so **following any
+commit id will not show it to you** and the text exists on one disk in one
+working tree. That corroboration is described above as settling "the weakest
+joint in §1's argument"; it is the least durable citation in the file. Second,
+the only three citations with durable backing are in the unpublished PPL package —
+the repository that was assessed as "delete-safe in full" earlier the same day,
+wrongly, and nearly removed. **The citations that survive a disk loss are the ones
+from the repo that was a deletion away; the fragile ones are all in the active
+repos.**
+
+Anyone treating this file's citations as repository state is reading a plan as a
+fact — which was the original sentence, and it is more true than it was written
+to be.
 
 **The same warning applies to this file.** As of 2026-09-21 this repository has
 **seven commits on `main` that have never been pushed** (`f66fd97`, `9358dfc`,

@@ -107,6 +107,43 @@ points and barriers all differ," which is the field-local-barrier condition of
 §1 stated independently. That was the weakest joint in §1's argument and it is
 now corroborated rather than assumed.
 
+### A second corroboration, found 2026-09-21, and it is stronger than the first
+
+`hypermath/P0_STATUS.md` — *"P0: status, and why there is no P0 layer in this
+repository"*, written 2026-09-21, **untracked** — is that field's written refusal
+to carry a P0 layer, and it reaches §1's field-local-barrier condition by a
+different route than `hyperlogic` did:
+
+> **"Not a port. A barrier argued from this field's own clauses."**
+> **"The P0 barrier appears to be field-specific. Three fields examined, three
+> different candidate barriers, and the one that tried to be arithmetic is the
+> one that broke."**
+
+**Why this is stronger than the `hyperlogic` corroboration, and what it does not
+corroborate.** `hyperlogic` *declared* the condition in a `non-derive`;
+`hypermath` **measured** it across three fields and reports the arithmetic
+candidate failing on five independent grounds. A declaration and a measurement
+agreeing is worth more than two declarations. But the scope is narrower than the
+first corroboration's: `P0_STATUS.md` never mentions the placement rule, a
+combination claim, or `metamathethicology`. **It corroborates the field-local-
+barrier condition only** — which is the weakest joint of §1 and therefore the
+part worth corroborating, but §1's placement rule still rests on
+`hyperlogic`'s `nd-p0-shadows-hypermath` alone.
+
+**It also independently confirms §4's period-1 finding**, which this file
+declines to re-derive: *"Period 1 is not forbidden here. It is the easy case"*,
+citing `trace-levels`' first disjunct `apply(x) == x` — the same clause §2 cites,
+reached without reference to this repository.
+
+**Durability, stated because it is worse than the first corroboration's.**
+`P0_STATUS.md` is untracked in `hypermath`. The draft it refutes lives in
+`[unpublished local repository]/hypermath/P0_perpetual_uncertainty.hm`, in a repository with
+**one commit and no remote configured**, where the file is untracked. And
+`[unpublished local repository]/hypermath/` is a **third** copy of hypermath's layer files
+on this disk, divergent from the real one rather than stale — `L2_operations.hm`
+is 709 lines against 446, `L3_ordinatics.hm` 748 against 796. Any recursive
+census across the local disk reads all three. See the Provenance note.
+
 ### The condition, which is not scheduling
 
 The ordering constraint binds for a reason sharper than queue position, and

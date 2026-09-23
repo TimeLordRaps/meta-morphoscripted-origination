@@ -107,6 +107,49 @@ points and barriers all differ," which is the field-local-barrier condition of
 §1 stated independently. That was the weakest joint in §1's argument and it is
 now corroborated rather than assumed.
 
+**DISCLOSURE, measured 2026-09-21, and it weakens the word "independent."**
+A cross-field declaration audit over all eight repositories — 417 distinct
+declared names across 28 `.hm` files — found exactly three names declared in more
+than one repository. Two of the three are in the P0 layers, and one of them is
+the very declaration quoted above:
+
+| name | where |
+|---|---|
+| `L0` (graduation block) | `hyperlogic/L0_triangle.hm:268`, `hypermath/L0_ground.hm:284` |
+| `ax-p0-no-return` | `hyperlogic/P0_shadow_ground.hm:113`, `hyperethics/P0_shadow_ground.hm:117` |
+| `nd-p0-shadows-hypermath` | `hyperlogic/P0_shadow_ground.hm:226`, `hyperethics/P0_shadow_ground.hm:266` |
+
+**What survives.** The two `nd-p0-shadows-hypermath` bodies are *different*, and
+each argues from its own field. `hyperethics` does not repeat `hyperlogic`'s
+generic "entry conditions, fixed points and barriers all differ"; it names its
+own — *"universal here, witnessed there ... a self-carrying hole here, a
+self-competing form there ... displacement here, arithmetic there — and that one
+is broken, GC-P0-3."* So the field-local-barrier condition is genuinely
+discharged twice, and §1's use of the rule stands.
+
+**What does not.** The two files share **52 lines of substantive prose verbatim**
+in two contiguous runs — `hyperlogic:270-302` / `hyperethics:313-345` (33 lines)
+and `hyperlogic:320-338` / `hyperethics:373-391` (19 lines), about 15% of each
+file. Shared prose of that size is evidence of a common source, not of two
+sessions reaching the same place. **The corroboration above should therefore be
+read as one argument stated twice, not two independent arguments.** The
+`hypermath/P0_STATUS.md` corroboration in the next section is unaffected: it
+shares no line with either P0 layer, and it remains the only genuinely
+independent one.
+
+**And the shared block is itself a placement defect, by this file's own rule.**
+Both runs audit **hypermath's** arithmetic barrier and **hypermath's**
+`ax-p0-no-return` — a subject neither `hyperlogic` nor `hyperethics` owns.
+Limb 2 says a field standing on another's foundation cites it rather than
+reproducing it, and `metamathethicology/p0_barrier.hm` does exactly that: it
+names `GC-P0-6` twice and reproduces none of the audit. The two P0 layers
+reproduce it instead. Measured corpus-wide, the block exists in exactly **two**
+files, and **`hypermath/P0_STATUS.md` — the file that is hypermath's own written
+statement about its own P0 — does not contain it at all.** So the finding about
+hypermath currently lives in both of hypermath's siblings and not in hypermath.
+The repair is to state it once where its subject is stated, and cite it from the
+two layers, which is what `metamathethicology` already does.
+
 ### A second corroboration, found 2026-09-21, and it is stronger than the first
 
 `hypermath/P0_STATUS.md` — *"P0: status, and why there is no P0 layer in this
@@ -143,6 +186,42 @@ reached without reference to this repository.
 on this disk, divergent from the real one rather than stale — `L2_operations.hm`
 is 709 lines against 446, `L3_ordinatics.hm` 748 against 796. Any recursive
 census across the local disk reads all three. See the Provenance note.
+
+**MEASURED 2026-09-21, and the paragraph above is understated on one count,
+right on a second, and stale on a third.** Re-run: `find <disk root> -name
+'L3_ordinatics.hm'`.
+
+- **Not three copies. Thirteen directories** hold hypermath's layer files.
+  One is the real repository, two are an unpublished local repository
+  and a dated backup copy of it, and **nine** are pinned dependency snapshots under
+  `[unpublished CI repository]/.dependencies/hypermath-*`. A recursive census across the local disk
+  reads thirteen, not three, and the nine CI pins are the bulk of it.
+- **`[unpublished local repository]/hypermath` is a git submodule, not a loose copy** —
+  gitlink mode `160000`, pinned at `a0ff1950`, with a `.gitmodules` present.
+  Its own checked-out HEAD is `35de15c3`, so the pin and the checkout already
+  disagree.
+- **"Divergent rather than stale" is right, but it is a split, not a uniform
+  state.** Tested by blob identity against every commit in hypermath's history:
+  `L2_operations.hm` is **exactly stale** (matches hypermath commit `e587fefc8`,
+  2026-04-14); `L1_relations.hm` and `L3_ordinatics.hm` are **divergent** — their
+  blobs appear in **no commit of either repository**, and neither does
+  `P0_perpetual_uncertainty.hm`.
+- **The line figures were accurate when written and have since moved**, which is
+  why they are left standing above rather than edited. They were taken from the
+  shared audit block in the P0 layers, which compared the draft against live
+  hypermath at the time. Live hypermath has since grown: `L2_operations.hm`
+  709 -> **811**, `L3_ordinatics.hm` 748 -> **854**. The draft side is unchanged
+  at 446 and 796.
+
+**Preservation, which is the part that matters.** The dated backup
+directory **is not a backup of this repository's contents.** It is missing the
+same 86 files the live working tree deleted — its licence, its README
+and 84 other files — so it
+was taken after the gutting, not before. Those 86 files survive **only inside
+the git objects**, which both directories do carry. The three unique `.hm` blobs
+above survive only as working-tree files, in two identical copies and no commit.
+**Deleting either directory without first restoring from its own `.git` destroys
+content that exists nowhere else.**
 
 ### The condition, which is not scheduling
 
@@ -1007,11 +1086,23 @@ object, not on the anchors (§2).
 ## Provenance
 
 Every count in this file was measured against local checkouts on 2026-09-21 and
-is re-runnable. `hypermath`, `hyperlogic`, `taxonomy-of-deception` and
-`grounded-hypercalculi` are PUBLIC; `hyperethics`, `hyperphysics`,
-`metamathethicology` and this repository are PRIVATE, verified by `gh repo view`
-before any path or repository name was written here. This file is private and
-may name them.
+is re-runnable. All eight repositories named here are PUBLIC: `hypermath`,
+`hyperlogic`, `taxonomy-of-deception`, `grounded-hypercalculi`, `hyperethics`,
+`hyperphysics`, `metamathethicology` and this repository, verified by
+`gh repo view` on 2026-09-23. This file is not on GitHub, because the local
+commits that hold it have never been pushed (below). It sits in a public
+repository, though, so pushing them publishes every path and repository name in
+it.
+
+**CORRECTED 2026-09-23: four of those were never private while this file
+existed.** This paragraph said `hyperethics`, `hyperphysics`,
+`metamathethicology` and this repository were PRIVATE, and that "this file is
+private and may name them." GitHub's event log dates each switch to public: this
+repository at its creation on 2026-03-20, `metamathethicology` and `hyperethics`
+on 2026-09-20 at 00:12 and 00:16 UTC, and `hyperphysics` at 23:22 UTC the same
+day. No later switch is recorded, so each has been public ever since. The
+sentence was written on 2026-09-21 (`f66fd97`), after all four, so it was wrong
+when written, not overtaken later.
 
 **CORRECTED 2026-09-21, and it was understated in both scope and severity.** This
 paragraph said the artefacts cited in `metamathethicology` and `hyperethics` are
@@ -1020,22 +1111,29 @@ paragraph said the artefacts cited in `metamathethicology` and `hyperethics` are
 commit at all**, which is not the same as tracked-and-modified, and the repos are
 four, not two.
 
-| cited artefact | state |
-|---|---|
-| `hyperlogic/P0_shadow_ground.hm` | **untracked** |
-| `metamathethicology/paradox_lattice_tower.hm` | **untracked** |
-| `metamathethicology/definitional_shadow.hm` | **untracked** |
-| `metamathethicology/p0_barrier.hm` | **untracked** |
-| `hyperethics/L1_entity.hm` | **untracked** |
-| `[unpublished PPL package]/.../verify.py` | tracked, clean, pushed |
-| `[unpublished PPL package]/.../cycle_detector.py` | tracked, clean, pushed |
-| `[unpublished PPL package]/docs/adr/0002-*.md` | tracked, clean, pushed |
+| cited artefact | state, 2026-09-21 | on GitHub, 2026-09-23 |
+|---|---|---|
+| `hyperlogic/P0_shadow_ground.hm` | **untracked** | no; still untracked |
+| `metamathethicology/paradox_lattice_tower.hm` | **untracked** | no; still untracked |
+| `metamathethicology/definitional_shadow.hm` | **untracked** | no; still untracked |
+| `metamathethicology/p0_barrier.hm` | **untracked** | no; still untracked |
+| `hyperethics/L1_entity.hm` | **untracked** | no; staged since, in no commit |
+| `[unpublished PPL package]/.../verify.py` | tracked, clean, pushed | **no: repository not found** |
+| `[unpublished PPL package]/.../cycle_detector.py` | tracked, clean, pushed | **no: repository not found** |
+| `[unpublished PPL package]/docs/adr/0002-*.md` | tracked, clean, pushed | **no: repository not found** |
+
+The third column was measured against each repository's default branch with
+`gh api .../contents/<path>`. For the PPL package, `gh api` and
+`git ls-remote` both report the repository itself as not found, with a token that
+can see private repositories. **None of the eight cited artefacts is published.**
 
 **The pattern is corpus-wide, not specific to this file's citations.** Across the
 five fields, top-level `.hm` files on disk versus tracked: `hyperlogic` 2/1,
 `metamathethicology` 4/1, `hyperethics` 5/2, `hypermath` 4/4, `hyperphysics` 1/1.
 **Eight of sixteen are in no commit**, and they are the newest layers — the P0
-set, `L1_entity`, `definitional_shadow`, `paradox_lattice_tower`.
+set, `L1_entity`, `definitional_shadow`, `paradox_lattice_tower`. Published on
+the default branches on GitHub as of 2026-09-23, the counts are 1, 1, 2, 4 and 1:
+nine of the seventeen top-level `.hm` files now on disk.
 
 **Two consequences for reading this file.** First, §1's independent corroboration
 (`nd-p0-shadows-hypermath`) is quoted from an untracked file, so **following any
@@ -1048,6 +1146,11 @@ wrongly, and nearly removed. **The citations that survive a disk loss are the on
 from the repo that was a deletion away; the fragile ones are all in the active
 repos.**
 
+**CORRECTED 2026-09-23: that backing is gone from GitHub.**
+The PPL package's repository is not found (above), so its three
+citations would not survive a disk loss either. None of the eight externally
+cited artefacts now resolves anywhere but a local disk.
+
 Anyone treating this file's citations as repository state is reading a plan as a
 fact — which was the original sentence, and it is more true than it was written
 to be.
@@ -1056,9 +1159,11 @@ to be.
 **seven commits on `main` that have never been pushed** (`f66fd97`, `9358dfc`,
 `305cd1f`, `2562292`, `be4e7ef`, `719585b`, `88d0d22`) and the working tree is
 clean. So this file exists on one disk only, and nothing here is recoverable from
-the remote. **Pushing is Tyler's decision and has not been made** — it is
-recorded here rather than left in a conversation so that it survives the
-conversation.
+the remote. As of 2026-09-23 this file is still not on `origin/main`, and the
+working tree has uncommitted edits. Because the repository is public, a push is
+the only step between this file and publication. **Pushing is Tyler's decision
+and has not been made** — it is recorded here rather than left in a conversation
+so that it survives the conversation.
 
 **Open, and Tyler's to answer rather than mine to infer** — the complete list, so
 that it does not have to be reconstructed:
@@ -1067,6 +1172,8 @@ that it does not have to be reconstructed:
 2. **`GC-PLT-8`** (§4): are Tyler's "8 classical paradoxes" this package's eight
    `Verdict` states, or an independent enumeration of paradox types? One
    question, two live branches, and §"PPL's standing" changes meaning either way.
+3. **The unpublished PPL package** (§Provenance): its GitHub repository is not found.
+   Was it deleted on purpose, or should it be restored?
 
 Everything else this file leaves open is a research gap, not a decision — §4
 lists those separately and none of them is waiting on an answer from anyone.

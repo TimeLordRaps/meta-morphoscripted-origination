@@ -10,6 +10,12 @@ One branch (`main`), one blob (`LICENSE`), roughly ten commits of which every
 single one is licensing churn — Time License v7.2 to v7.7 to v7.77, then
 AGPL-3.0, plus a drift-check workflow added and removed. Last push 2026-04-07.
 
+> **UPDATED 2026-09-24: licence.** Tyler asked for the whole repository to be
+> licensed under the Apache License, Version 2.0. `LICENSE` now holds the
+> official text from apache.org, byte for byte, and `NOTICE` names the
+> copyright holder. The paragraph above is left as written: it records what
+> the repository held on 2026-09-21.
+
 **The whole repository is its name and its GitHub description.** There is no
 content to recover, no other branch, no stale draft. Anyone opening this should
 stop looking for source and start from the description, which is reproduced

@@ -1,0 +1,233 @@
+# Origination declaration: rough draft, 2026-09-24. Not yet read by Tyler.
+id: grief-and-burial
+status: rough
+subject: Grief that keeps the dead close, shown by burial
+kind: emotion
+summary: >
+  Grief itself leaves no bones, so the oldest trace we have is what grieving
+  people did: they buried their dead with care. The earliest widely accepted
+  intentional burials are about 120,000 to 90,000 years old, at Qafzeh and
+  Skhul in Israel. The earliest known in Africa is a small child laid in a
+  dug pit at Panga ya Saidi, Kenya, about 78,000 years ago. The feeling is
+  almost certainly older than any grave.
+
+epigraph:
+  line: "What's left that sacred / What's left to take with / What's dead stays in / What's left to make kin"
+  from: The TimeLord, "What are dreams made of"
+
+when:
+  summary: Burials from about 120,000 years ago; the emotion, probably much earlier
+  years_ago: {from: 120000, to: 78000}
+  confidence: medium
+  note: >
+    The window covers the earliest burials that most specialists accept. An
+    older claim, that Homo naledi buried its dead in the Rising Star cave
+    system in South Africa, is actively disputed (see evidence). Other
+    primates respond to their dead in ways that look like grief (Anderson
+    2016), which suggests the emotion is older than burial. How much older
+    is speculation.
+
+how:
+  enabler: The practice of digging a pit and placing a body in it with care
+  confidence: medium
+  note: >
+    No single invented tool can be named. What left the first durable trace
+    is a practice: digging, positioning, sometimes wrapping, and sometimes
+    leaving objects with the dead. At Qafzeh, a boy (Qafzeh 11) was buried
+    with deer antlers, and red ochre was found near the bones (Smithsonian).
+
+why:
+  problem: >
+    Staying bonded to someone who is gone, and doing right by them; also,
+    practically, protecting a body from scavengers and the living from
+    decay.
+  confidence: speculative
+  note: >
+    Burial is evidence of care and intent, not of a specific inner feeling.
+    Reading grief into it is an inference, and a reasonable one, not an
+    observation.
+
+where:
+  first:
+    place: The southern Levant (Qafzeh and Skhul caves, Israel)
+    why_there: >
+      Caves preserve bones and have been excavated for a century. The Levant
+      is also the land bridge between Africa and Eurasia. How much of "first"
+      reflects where bones survive and where archaeologists have dug is
+      unknown, and probably a great deal.
+  most_prominent:
+    place: No single place. Mourning the dead is found in every known human society.
+    why_there: It travelled with people everywhere they went.
+  confidence: low
+  note: >
+    Panga ya Saidi (coastal Kenya) is the earliest known burial in Africa,
+    where Homo sapiens arose, so the practice may be older there than the
+    record now shows.
+
+who:
+  attributable: false
+  note: >
+    No one. The earliest graves hold people whose names were never written,
+    and the child at Panga ya Saidi is known only by the nickname its
+    excavators gave it, "Mtoto" (Swahili for "child").
+
+evidence:
+  - source: >
+      Martinón-Torres, M. et al. (2021). Earliest known human burial in
+      Africa. Nature 593(7857), 95-100.
+    doi: 10.1038/s41586-021-03457-8
+    supports: >
+      A child of about three, buried about 78,000 years ago in a deliberately
+      dug pit at Panga ya Saidi, Kenya, probably tightly wrapped, with the
+      head possibly on a support that has since decayed.
+    confidence: high
+    contested: false
+  - source: "Smithsonian Institution Human Origins Program. Qafzeh: Oldest Intentional Burial."
+    url: https://humanorigins.si.edu/evidence/behavior/burial/qafzeh-oldest-intentional-burial
+    supports: >
+      Intentional burials of Homo sapiens at Qafzeh, Israel, with red ochre
+      found near the bones; one of the oldest accepted examples.
+    confidence: high
+    contested: false
+  - source: Pettitt, P. (2011). The Palaeolithic Origins of Human Burial. Routledge.
+    doi: 10.4324/9780203813300
+    supports: A book-length survey of the evidence for early mortuary behaviour and how to read it.
+    confidence: high
+    contested: false
+  - source: >
+      Pomeroy, E. et al. (2020). New Neanderthal remains associated with the
+      'flower burial' at Shanidar Cave. Antiquity 94(373), 11-26.
+    doi: 10.15184/aqy.2019.207
+    supports: >
+      Neanderthals at Shanidar, Iraq, placed at least some of their dead
+      deliberately, which means care for the dead was not only a Homo
+      sapiens practice.
+    confidence: medium
+    contested: true
+    note: >
+      The older idea that flowers were laid in a Shanidar grave rests on
+      pollen that may have been brought in by burrowing animals. The paper
+      itself treats that reading with caution.
+  - source: >
+      Berger, L. R. et al. Evidence for deliberate burial of the dead by Homo
+      naledi. eLife (reviewed preprint RP89106, revised 2025).
+    doi: 10.7554/eLife.89106
+    supports: A claim that Homo naledi buried its dead in the Rising Star cave system, South Africa.
+    confidence: low
+    contested: true
+    note: >
+      Contested in print: Martinón-Torres, M. et al. (2024). No scientific
+      evidence that Homo naledi buried their dead and produced rock art.
+      Journal of Human Evolution 195, 103464. doi 10.1016/j.jhevol.2023.103464.
+      At least one of eLife's own published reviews also judged the
+      evidence incomplete.
+  - source: Anderson, J. R. (2016). Comparative thanatology. Current Biology 26(13), R553-R556.
+    doi: 10.1016/j.cub.2015.11.010
+    supports: Other animals, especially primates, respond to their dead in varied, sometimes grief-like ways.
+    confidence: medium
+    contested: false
+  - source: >
+      Klass, D., Silverman, P. R. and Nickman, S. L. (eds.) (1996).
+      Continuing Bonds: New Understandings of Grief. Taylor and Francis.
+    doi: 10.4324/9781315800790
+    supports: >
+      Many bereaved people keep an ongoing bond with the person who died,
+      and this is healthy rather than a failure to let go.
+    confidence: medium
+    contested: false
+  - source: >
+      Öhman, C. and Floridi, L. (2017). The political economy of death in the
+      age of information: a critical approach to the digital afterlife
+      industry. Minds and Machines 27(4), 639-662.
+    doi: 10.1007/s11023-017-9445-2
+    supports: Grief and remembrance now have a digital, commercial form, including systems that simulate the dead.
+    confidence: medium
+    contested: false
+
+consensus:
+  - Intentional burial by Homo sapiens is established by about 100,000 years ago in the Levant.
+  - Neanderthals also buried at least some of their dead.
+  - Burial shows care and intent toward the dead.
+
+speculation:
+  - That burial expresses grief as we feel it now. This is likely, and it is an inference.
+  - That grief is far older than burial. Comparative thanatology points this way, and it cannot yet be dated.
+  - That Homo naledi buried its dead. Claimed, and disputed in print.
+
+morphs:
+  - stage: First trace
+    when: About 120,000 to 78,000 years ago
+    change: A body placed in a dug pit, sometimes wrapped, sometimes with antlers or ochre.
+  - stage: Monuments
+    when: About 4,500 years ago (Old Kingdom Egypt), and in many places since
+    change: Graves become monuments, and caring for the dead becomes public and lasting.
+  - stage: Rites in living traditions
+    when: Continuous to today
+    change: "Mourning is given a form, a length and words: set days, set prayers, set places."
+  - stage: Digital remembrance
+    when: This century
+    change: >
+      Memorial pages, preserved messages and systems that simulate a dead
+      person's voice. This is where grief first meets AI.
+
+tenet_links:
+  - tradition: Buddhism
+    how_held: >
+      Many Buddhist communities make merit on behalf of the dead, for
+      example by offering food to monks and dedicating the merit to the
+      person who died.
+    reference: Merit dedication (Pali pattidana) in Theravada practice
+  - tradition: Chinese traditions
+    how_held: Families tend and sweep ancestors' graves and make offerings at the Qingming festival.
+    reference: Qingming (tomb-sweeping day)
+  - tradition: Christianity
+    how_held: >
+      Funeral rites commend the dead to God; many churches pray for or
+      remember the dead, for example on All Souls' Day.
+    reference: All Souls' Day (2 November) in Catholic and some other churches
+  - tradition: Hinduism
+    how_held: >
+      Antyesti, the last rites (usually cremation), followed by shraddha,
+      rites that honour and sustain the ancestors.
+    reference: Antyesti; shraddha
+  - tradition: Islam
+    how_held: >
+      The community prays the funeral prayer (salat al-janazah) together,
+      and the body is buried promptly and simply.
+    reference: Salat al-janazah
+  - tradition: Judaism
+    how_held: >
+      Seven days of mourning at home (shiva) and the mourner's Kaddish, said
+      in community for the one who died.
+    reference: Shiva; Mourner's Kaddish
+  - tradition: Non-religious people
+    how_held: Secular funerals and memorials, including humanist ceremonies, that celebrate a life without religious rites.
+    reference: Humanist funerals
+
+paradox_held:
+  - tension: "The dead are gone, and the dead are still with us."
+    held_by: >
+      Most mourners in most traditions, and many with none. It is what
+      "continuing bonds" (Klass, Silverman and Nickman 1996) describes.
+    note: >
+      Neither side is a mistake. A map that kept only "gone" or only "with
+      us" would drop what people actually live.
+  - tension: "Grief should end, and grief should never end."
+    held_by: >
+      Traditions that set a length for mourning, such as shiva's seven days,
+      and also set days to remember every year, such as the yahrzeit in
+      Judaism or Qingming in China.
+    note: The rite gives both sides a place on the calendar.
+
+restory: >
+  Long before anyone wrote a word, someone knelt at the back of a cave on
+  the Kenyan coast and dug a small pit. A child who had died, about three
+  years old, was wrapped and laid in it on one side, knees drawn up. Nobody
+  wrote down what they felt. They didn't need to: they dug.
+
+open_questions:
+  - How much older than burial is grief, and can anything but comparative evidence ever show it?
+  - Did burial begin once and spread, or begin many times in many places?
+  - Does grief for a simulated voice of the dead continue a bond, or replace it?
+
+checked_on: "2026-09-24"

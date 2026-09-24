@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Origination declaration (rough draft, 2026-09-24)",
+  "description": "One declaration records when, how, why, where and, only when the record allows it, by whom a human emotion, idea, belief, piece of knowledge or thought most likely first appeared, how it changed afterwards, which living traditions hold it today, and which tensions people hold inside it without resolving them. ROUGH: field names may still change.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "status", "subject", "kind", "summary",
+    "when", "how", "why", "where", "who",
+    "evidence", "consensus", "speculation",
+    "morphs", "tenet_links", "paradox_held",
+    "restory", "open_questions", "checked_on"
+  ],
+  "properties": {
+    "id": {
+      "description": "Lower-case slug. The file is named NN-<id>.yaml.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "status": {
+      "description": "rough: first pass, not yet read by Tyler. draft: read and revised. reviewed: checked by someone other than its author.",
+      "enum": ["rough", "draft", "reviewed"]
+    },
+    "subject": {
+      "description": "What originated, in a few plain words.",
+      "type": "string",
+      "minLength": 3
+    },
+    "kind": {
+      "description": "The five kinds Tyler named: emotions, ideas, beliefs, knowledge and thoughts.",
+      "enum": ["emotion", "idea", "belief", "knowledge", "thought"]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20
+    },
+    "epigraph": {
+      "description": "Optional. A line from Tyler's own lyrics or prose, and never anyone else's.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["line", "from"],
+      "properties": {
+        "line": { "type": "string" },
+        "from": { "type": "string" }
+      }
+    },
+    "when": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["summary", "years_ago", "confidence", "note"],
+      "properties": {
+        "summary": { "type": "string" },
+        "years_ago": {
+          "description": "The window in which the earliest evidence falls, oldest bound first. Approximate; at this resolution the difference between 'before 1950' and 'before today' only matters for historical dates, which also go in 'calendar'.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["from", "to"],
+          "properties": {
+            "from": { "type": "integer", "minimum": 0 },
+            "to": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "calendar": {
+          "description": "Optional. Calendar dates, for anything recent enough to have them (BCE / CE).",
+          "type": "string"
+        },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "note": { "type": "string" }
+      }
+    },
+    "how": {
+      "description": "The tool, practice or event that made it possible, if one can be named.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabler", "confidence", "note"],
+      "properties": {
+        "enabler": { "type": "string" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "note": { "type": "string" }
+      }
+    },
+    "why": {
+      "description": "The problem it solves, as best the evidence lets us say.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["problem", "confidence", "note"],
+      "properties": {
+        "problem": { "type": "string" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "note": { "type": "string" }
+      }
+    },
+    "where": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["first", "most_prominent", "confidence", "note"],
+      "properties": {
+        "first": { "$ref": "#/$defs/place" },
+        "most_prominent": { "$ref": "#/$defs/place" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "note": { "type": "string" }
+      }
+    },
+    "who": {
+      "description": "Only when a person is genuinely associated with it. Most origins have no name, and saying so is the honest answer.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["attributable", "note"],
+      "properties": {
+        "attributable": { "type": "boolean" },
+        "attribution": { "type": "string" },
+        "note": { "type": "string" }
+      },
+      "if": { "properties": { "attributable": { "const": true } } },
+      "then": { "required": ["attributable", "attribution", "note"] }
+    },
+    "evidence": {
+      "description": "Real, checkable sources only. Never invent one; if nothing checkable exists, the declaration says the evidence is thin.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source", "supports", "confidence", "contested"],
+        "properties": {
+          "source": { "type": "string" },
+          "doi": { "type": "string", "pattern": "^10\\.[0-9]{4,9}/\\S+$" },
+          "url": { "type": "string", "pattern": "^https://" },
+          "supports": { "type": "string" },
+          "confidence": { "$ref": "#/$defs/confidence" },
+          "contested": {
+            "description": "True when published work disputes this source's reading.",
+            "type": "boolean"
+          },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "consensus": {
+      "description": "What most specialists would accept.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "speculation": {
+      "description": "What is plausible, argued for, or ours, and not settled.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "morphs": {
+      "description": "How it changed on the way from its origin to today.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["stage", "when", "change"],
+        "properties": {
+          "stage": { "type": "string" },
+          "when": { "type": "string" },
+          "change": { "type": "string" }
+        }
+      }
+    },
+    "tenet_links": {
+      "description": "Which living traditions hold it today, and how. Listed alphabetically by tradition: order is never rank.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["tradition", "how_held"],
+        "properties": {
+          "tradition": { "type": "string" },
+          "how_held": { "type": "string" },
+          "reference": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "paradox_held": {
+      "description": "Tensions people hold inside this without resolving them. Kept, never discarded: a contradiction held by a person is data, not an error.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["tension", "held_by"],
+        "properties": {
+          "tension": { "type": "string" },
+          "held_by": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "restory": {
+      "description": "Tyler's word: 'Restory - Retell a story'. A short retelling in plain words. It is a retelling, not evidence.",
+      "type": "string",
+      "minLength": 20
+    },
+    "open_questions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "checked_on": {
+      "description": "The date the sources were last checked, YYYY-MM-DD.",
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    }
+  },
+  "$defs": {
+    "confidence": {
+      "description": "high: most specialists accept it. medium: well argued, with live alternatives. low: one line of evidence, or a disputed one. speculative: an inference or a hope, labelled as such.",
+      "enum": ["high", "medium", "low", "speculative"]
+    },
+    "place": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["place", "why_there"],
+      "properties": {
+        "place": { "type": "string" },
+        "why_there": { "type": "string" }
+      }
+    }
+  }
+}

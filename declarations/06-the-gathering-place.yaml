@@ -1,0 +1,192 @@
+# Origination declaration: rough draft, 2026-09-24. Not yet read by Tyler.
+id: the-gathering-place
+status: rough
+subject: The belief that some places are set apart, worth travelling to and gathering at
+kind: belief
+summary: >
+  About 11,500 years ago, before farming or pottery, people in what is now
+  southeastern Türkiye quarried and raised great T-shaped limestone pillars,
+  some carved with animals, in round enclosures at Göbekli Tepe. Its
+  excavators long read it as a sanctuary where people gathered and feasted.
+  Others argue some of the buildings were houses, and later work found signs
+  of settlement. Either way, it is among the oldest monumental places people
+  built together.
+
+epigraph:
+  line: "taking me to higher / Dimensions inside our one"
+  from: The TimeLord, "Infinity Pools"
+
+when:
+  summary: Built from about 11,500 years ago; out of use by about 10,000 years ago
+  years_ago: {from: 11600, to: 10000}
+  calendar: c. 9500-8000 BCE (UNESCO gives the 10th to 9th millennia BC)
+  confidence: high
+  note: >
+    The dating of the enclosures is secure. What they were for is the open
+    part. Special places could be much older and leave no monument.
+
+how:
+  enabler: Stone quarrying and carving on a large scale, and the ability to feed many people at once
+  confidence: medium
+  note: >
+    Large amounts of cereal were processed on site (Dietrich et al. 2019),
+    which fits gatherings and feasts, and also fits everyday life.
+
+why:
+  problem: Bringing many people together, beyond family and band, to cooperate and to share something larger than themselves
+  confidence: speculative
+  note: >
+    Awe, the feeling of standing before something vast that changes how you
+    see the world (Keltner and Haidt 2003), is a plausible part of the
+    answer. It cannot be observed in stone.
+
+where:
+  first:
+    place: Göbekli Tepe, on a limestone ridge in the Germuş mountains near Şanlıurfa, southeastern Türkiye (Upper Mesopotamia)
+    why_there: >
+      Limestone to quarry on the spot, and wild cereals nearby in the region
+      where farming would soon begin. How much it was the first, and how
+      much the first found, is unknown; related sites in the region are
+      still being studied.
+  most_prominent:
+    place: No single place. Every tradition has its own.
+    why_there: The pattern is universal; the places are particular.
+  confidence: medium
+  note: UNESCO inscribed Göbekli Tepe as a World Heritage Site in 2018.
+
+who:
+  attributable: false
+  note: >
+    The builders were hunter-gatherers whose names are lost. The site's
+    importance was recognised by the archaeologist Klaus Schmidt, who led
+    excavations there from 1995; he found it, he did not make it.
+
+evidence:
+  - source: UNESCO World Heritage Centre. Göbekli Tepe (World Heritage List entry 1572, inscribed 2018).
+    url: https://whc.unesco.org/en/list/1572/
+    supports: Monumental enclosures built by hunter-gatherers in the 10th to 9th millennia BC, probably used for social events and rituals.
+    confidence: high
+    contested: false
+  - source: >
+      Dietrich, O. et al. (2012). The role of cult and feasting in the
+      emergence of Neolithic communities. New evidence from Göbekli Tepe,
+      south-eastern Turkey. Antiquity 86(333), 674-695.
+    doi: 10.1017/s0003598x00047840
+    supports: The excavators' reading of the site as a place of cult and feasting.
+    confidence: medium
+    contested: true
+    note: See Banning 2011, and the settlement evidence summarised by Clare 2020.
+  - source: >
+      Banning, E. B. (2011). So fair a house: Göbekli Tepe and the
+      identification of temples in the Pre-Pottery Neolithic of the Near
+      East. Current Anthropology 52(5), 619-660.
+    doi: 10.1086/661207
+    supports: The argument that some of the buildings could have been houses, and that "temple" is not the only reading.
+    confidence: medium
+    contested: true
+  - source: >
+      Clare, L. (2020). Göbekli Tepe, Turkey. A brief summary of research at
+      a new World Heritage Site (2015-2019). e-Forschungsberichte des
+      Deutschen Archäologischen Instituts 2020(2), 1-13.
+    url: https://publications.dainst.org/journals/efb/article/view/2596
+    supports: >
+      Work from 2015 to 2019 that revised earlier interpretations, including
+      evidence of domestic buildings and rainwater collection, so the site
+      was lived at as well as gathered at.
+    confidence: medium
+    contested: false
+  - source: >
+      Knitter, D. et al. (2019). Göbekli Tepe: a brief description of the
+      environmental development in the surroundings of the UNESCO World
+      Heritage Site. Land 8(4), 72.
+    doi: 10.3390/land8040072
+    supports: The site's environmental setting and how it changed over time.
+    confidence: medium
+    contested: false
+  - source: >
+      Dietrich, L., Meister, J., Dietrich, O. et al. (2019). Cereal
+      processing at Early Neolithic Göbekli Tepe, southeastern Turkey. PLOS
+      ONE 14(5), e0215214.
+    doi: 10.1371/journal.pone.0215214
+    supports: Large-scale processing of cereals on site.
+    confidence: high
+    contested: false
+  - source: >
+      Keltner, D. and Haidt, J. (2003). Approaching awe, a moral, spiritual,
+      and aesthetic emotion. Cognition and Emotion 17(2), 297-314.
+    doi: 10.1080/02699930302297
+    supports: A working account of awe as a response to vastness that changes how a person sees the world.
+    confidence: medium
+    contested: false
+    note: Modern psychology, not archaeology. It says what awe is, not that the builders felt it.
+
+consensus:
+  - Hunter-gatherers built monumental enclosures at Göbekli Tepe about 11,500 years ago.
+  - The site brought many people together, for building at the very least.
+
+speculation:
+  - That it was a sanctuary rather than, or as well as, a settlement.
+  - That shared awe helped hold large groups together.
+  - That gathering at special places helped bring about farming, rather than the other way round.
+
+morphs:
+  - stage: First monument
+    when: About 11,500 years ago
+    change: A place built by many hands, carved with animals, where people gathered.
+  - stage: Temples and sanctuaries
+    when: From about 5,000 years ago in many regions
+    change: Places set apart for the divine, with priests, calendars and rules of approach.
+  - stage: Pilgrimage
+    when: The last three thousand years
+    change: Journeys to a sacred place become a duty or a devotion for millions.
+  - stage: Today
+    when: Now
+    change: Sacred places, and gatherings that happen partly or wholly online.
+
+tenet_links:
+  - tradition: Buddhism
+    how_held: >
+      Four places connected with the Buddha's life (Lumbini, Bodh Gaya,
+      Sarnath and Kushinagar) are named as worth visiting with reverence.
+    reference: Mahaparinibbana Sutta (Digha Nikaya 16)
+  - tradition: Christianity
+    how_held: Pilgrimage to Jerusalem, Rome, Santiago de Compostela and many other places.
+    reference: Christian pilgrimage
+  - tradition: Hinduism
+    how_held: Pilgrimage to sacred places (tirtha yatra), including the Kumbh Mela, among the largest gatherings of people anywhere.
+    reference: Tirtha; Kumbh Mela
+  - tradition: Islam
+    how_held: The Hajj to Mecca, one of the Five Pillars, for every Muslim who is able.
+    reference: Hajj
+  - tradition: Judaism
+    how_held: >
+      The three pilgrimage festivals (Pesach, Shavuot and Sukkot), once
+      journeys to the Temple in Jerusalem; the Western Wall today.
+    reference: Shalosh regalim
+  - tradition: Sikhism
+    how_held: The Harmandir Sahib in Amritsar, whose four entrances signify that it is open to all.
+    reference: Harmandir Sahib
+
+paradox_held:
+  - tension: "The sacred is here, in this place, and the sacred cannot be contained by any place."
+    held_by: >
+      Judaism and Christianity, in Solomon's prayer at the dedication of the
+      Temple ("the heaven and heaven of heavens cannot contain thee; how
+      much less this house", 1 Kings 8:27, KJV); Islam, which faces the
+      Kaaba in prayer and teaches that "wherever you turn, there is the Face
+      of God" (Qur'an 2:115).
+    note: The place is holy and the holy is not only in the place. Both are kept.
+
+restory: >
+  Eleven and a half thousand years ago, before anyone farmed, people
+  climbed a limestone ridge and started cutting pillars out of the hill
+  itself. They carved foxes, boars, snakes and birds into them, stood them
+  in circles, and came back, again and again, in numbers. Whatever else it
+  was, it was a place worth gathering at, and they made it together.
+
+open_questions:
+  - Were the enclosures sanctuaries, houses, or both at once?
+  - Is a gathering place the origin of belief, or one of its expressions?
+  - Can a place that exists only online be set apart in the same way?
+
+checked_on: "2026-09-24"

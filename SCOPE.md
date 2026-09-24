@@ -1,6 +1,6 @@
 # Scope: what this repository must settle before it has content
 
-Written 2026-09-21. Uncommitted. This file is a precondition note, in the same
+Written 2026-09-21; uncommitted when written. This file is a precondition note, in the same
 spirit as `hyperphysics/P0_PRECONDITION.md` — it exists to keep a later session
 from starting in the wrong place.
 
@@ -15,6 +15,15 @@ AGPL-3.0, plus a drift-check workflow added and removed. Last push 2026-04-07.
 > official text from apache.org, byte for byte, and `NOTICE` names the
 > copyright holder. The paragraph above is left as written: it records what
 > the repository held on 2026-09-21.
+
+> **UPDATED 2026-09-24: roughs.** The repository is no longer empty. At
+> Tyler's request, rough first drafts were added on the branch
+> `origination/roughs`: a `README.md` that opens with his origination
+> declarations, worked declarations in `declarations/` with a schema and a
+> check, `SURFACE.md` and `GLOSSARY.md`. They are **material, not theory.** No
+> layer, axiom or operator is defined in them, which keeps to the ordering at
+> the end of this file. The next paragraph is left as written, as a record of
+> 2026-09-21.
 
 **The whole repository is its name and its GitHub description.** There is no
 content to recover, no other branch, no stale draft. Anyone opening this should

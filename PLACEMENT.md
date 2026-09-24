@@ -1165,10 +1165,40 @@ the only step between this file and publication. **Pushing is Tyler's decision
 and has not been made** — it is recorded here rather than left in a conversation
 so that it survives the conversation.
 
+**UPDATED 2026-09-24: the push became a pull request, on a rebuilt history.**
+Tyler asked for this repository to be set up with rough drafts and opened as a
+pull request for him to inspect. The ten local commits could not be pushed as
+they stood, because their text named unpublished repositories and local disk
+paths. They were **replayed onto a new branch, `origination/roughs`, cut from
+`origin/main`**, with those names and paths reworded and nothing else changed.
+Each replayed commit keeps its original author, date and subject line, and its
+message names the local commit it was carried from. The originals are still on
+the local `main`, unpushed and untouched. Commit ids quoted elsewhere in this
+file are the originals; on the branch they correspond as follows.
+
+| original, local `main` only | on `origination/roughs` |
+|---|---|
+| `f66fd97` | `645508c` |
+| `9358dfc` | `f1d2f35` |
+| `305cd1f` | `666fb5c` |
+| `2562292` | `90b791c` |
+| `be4e7ef` | `219e7cb` |
+| `719585b` | `b1736fe` |
+| `88d0d22` | `59c09d5` |
+| `1ca7c85` | `d246612` |
+| `702ccbc` | `0c5adf8` |
+| `b62ced0` | `a769dca` |
+
+The uncommitted edits of 2026-09-23 are carried as `eadf880`. The branch then
+adds the Apache 2.0 licence and the first rough drafts. The branch is public
+once pushed, so this file is published on it. **Merging to `main` is still
+Tyler's decision**, and nothing on the branch makes it for him.
+
 **Open, and Tyler's to answer rather than mine to infer** — the complete list, so
 that it does not have to be reconstructed:
 
-1. **Push or don't** (above).
+1. **Merge or don't** (above). Superseded wording, kept for the record: "Push or
+   don't".
 2. **`GC-PLT-8`** (§4): are Tyler's "8 classical paradoxes" this package's eight
    `Verdict` states, or an independent enumeration of paradox types? One
    question, two live branches, and §"PPL's standing" changes meaning either way.

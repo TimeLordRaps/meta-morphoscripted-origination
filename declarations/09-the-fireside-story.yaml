@@ -1,0 +1,200 @@
+# Origination declaration: rough draft, 2026-09-24. Not yet read by Tyler.
+id: the-fireside-story
+status: rough
+subject: The thought that what happened can be told, and told again, so that people who were not there can live it too
+kind: thought
+summary: >
+  Story is almost certainly as old as language, and language leaves no
+  fossils. What can be found is later. Among Ju/'hoansi hunter-gatherers in
+  southern Africa, talk by day is mostly practical, and talk by firelight at
+  night is mostly stories. Some Aboriginal Australian stories may carry
+  memories of coastlines drowned more than 7,000 years ago. The first
+  stories written down come from Mesopotamia, about 4,000 years ago: the
+  poems of Gilgamesh, a king who lost his friend and went looking for a way
+  not to die.
+
+epigraph:
+  line: "Truth be told and stories as old as time will tell"
+  from: The TimeLord, from his collected raps (untitled)
+
+when:
+  summary: Surely as old as language; perhaps carried by memory for more than 7,000 years; written down by about 4,100 years ago
+  years_ago: {from: 7000, to: 4100}
+  calendar: Sumerian Gilgamesh poems probably composed c. 2100 BCE; Enheduanna's hymns c. 23rd century BCE
+  confidence: low
+  note: >
+    The range covers only the evidence gathered here. Stories are certainly
+    older than 7,000 years; nobody can say by how much.
+
+how:
+  enabler: Language; firelight that lengthened the evening (see fire-kept); much later, writing
+  confidence: medium
+  note: >
+    Dunbar (2014) argues that fire gave people evening hours free of work,
+    and that much of that time went on talk and stories.
+
+why:
+  problem: Passing on what one person learned to people who were not there, and holding a group together with shared memory and shared rules
+  confidence: medium
+  note: >
+    Among the Agta of the Philippines, skilled storytellers were preferred
+    as campmates and had more surviving children, and their stories carry
+    messages about cooperation (Smith et al. 2017). This is a present-day
+    study. It suggests why stories matter; it does not date their origin.
+
+where:
+  first:
+    place: Unknown. Wherever people first had language.
+    why_there: No place can be named. The earliest written stories come from southern Mesopotamia (modern Iraq), where writing began.
+  most_prominent:
+    place: No single place. Every known human society tells stories.
+    why_there: Story travelled with language, everywhere people went.
+  confidence: low
+  note: Where stories were first written down is known. Where they were first told is not.
+
+who:
+  attributable: true
+  attribution: >
+    Enheduanna, high priestess of the Moon god at Ur and daughter of Sargon
+    of Akkad, is often called the earliest author known by name, for hymns
+    of the 23rd century BCE. The attribution is debated, because her works
+    survive only in later copies. The Gilgamesh poems have no known author;
+    ancient tradition credits the later standard version to a scholar named
+    Sin-leqi-unninni.
+  note: >
+    No one originated story. These are only the first names that writing
+    kept.
+
+evidence:
+  - source: >
+      Wiessner, P. W. (2014). Embers of society: Firelight talk among the
+      Ju/'hoansi Bushmen. PNAS 111(39), 14027-14035.
+    doi: 10.1073/pnas.1404212111
+    supports: Talk by day was mostly about practical matters and complaints; talk by firelight at night was mostly stories.
+    confidence: high
+    contested: false
+    note: A study of one present-day people, used as a window, not a time machine.
+  - source: Dunbar, R. I. M. (2014). How conversations around campfires came to be. PNAS 111(39), 14013-14014.
+    doi: 10.1073/pnas.1416382111
+    supports: The argument that fire lengthened the social day and made room for talk and storytelling.
+    confidence: medium
+    contested: false
+  - source: >
+      Smith, D. et al. (2017). Cooperation and the evolution of
+      hunter-gatherer storytelling. Nature Communications 8, 1853.
+    doi: 10.1038/s41467-017-02036-8
+    supports: Among the Agta, skilled storytellers were preferred as campmates and had more surviving children; stories carried cooperative norms.
+    confidence: medium
+    contested: false
+  - source: >
+      Nunn, P. D. and Reid, N. J. (2016). Aboriginal memories of inundation
+      of the Australian coast dating from more than 7000 years ago.
+      Australian Geographer 47(1), 11-47.
+    doi: 10.1080/00049182.2015.1077539
+    supports: Stories from many places around the Australian coast that describe land now under the sea, which the authors link to sea-level rise after the last ice age.
+    confidence: low
+    contested: true
+    note: >
+      Whether stories can carry a memory for more than 7,000 years is
+      debated. These are the stories of living peoples; they are mentioned
+      here only through a published study, and their meaning belongs to
+      their custodians.
+  - source: >
+      George, A. R. (2003). The Babylonian Gilgamesh Epic: Introduction,
+      Critical Edition and Cuneiform Texts. Oxford University Press.
+    supports: The Sumerian Gilgamesh poems, the Old Babylonian version, and the later standard version, with their dating and history.
+    confidence: high
+    contested: false
+  - source: Encyclopaedia Britannica. Enheduanna.
+    url: https://www.britannica.com/biography/Enheduanna
+    supports: Enheduanna as priestess at Ur, daughter of Sargon of Akkad, and the earliest known author by name.
+    confidence: medium
+    contested: true
+    note: See also World History Encyclopedia, https://www.worldhistory.org/Enheduanna/
+
+consensus:
+  - Every known human society tells stories.
+  - The earliest written narrative poems come from Mesopotamia and include the Gilgamesh poems.
+
+speculation:
+  - That stories began around the fire, rather than simply being helped by it.
+  - That oral stories can carry accurate memories for more than 7,000 years.
+  - That storytelling spread because it helped groups cooperate.
+
+morphs:
+  - stage: Told
+    when: Undatable; as old as language
+    change: What one person saw becomes something others can know.
+  - stage: Firelight
+    when: Once fire was kept, and perhaps long before
+    change: The evening becomes a time for stories.
+  - stage: Long memory
+    when: Possibly across more than 7,000 years
+    change: Stories carried through many generations without writing.
+  - stage: Written
+    when: From about 2300 to 2100 BCE
+    change: Hymns and stories set down in clay, some under a name.
+  - stage: Sacred story
+    when: The last three thousand years
+    change: Stories of creation, of prophets and of teachers, told, written and retold as scripture.
+  - stage: Today
+    when: Now
+    change: Novels, films, games, and stories told by machines and to them.
+
+tenet_links:
+  - tradition: Aboriginal Australian peoples
+    how_held: >
+      For many Aboriginal peoples, law, country and ancestral history are
+      held in stories, songs and ceremony, passed on with care across many
+      generations.
+    reference: Nunn and Reid 2016 (a published study; not a source on meaning)
+  - tradition: Buddhism
+    how_held: The Jataka tales, stories of the Buddha's former lives, teach virtues such as generosity and patience.
+    reference: Jataka
+  - tradition: Christianity
+    how_held: Jesus often taught in parables, such as the Good Samaritan and the Prodigal Son.
+    reference: Luke 10:25-37; Luke 15:11-32
+  - tradition: Hinduism
+    how_held: The Ramayana and the Mahabharata, retold in recitation, drama and katha (sacred storytelling) across many languages.
+    reference: Ramayana; Mahabharata
+  - tradition: Islam
+    how_held: The Qur'an calls its account of Joseph "the best of stories", and the stories of the prophets (qisas al-anbiya) are told and retold.
+    reference: Qur'an 12:3
+  - tradition: Judaism
+    how_held: >
+      The command to tell your child the story of the Exodus is kept at
+      every Passover seder, where the Haggadah is read aloud.
+    reference: Exodus 13:8
+  - tradition: Sikhism
+    how_held: Sakhis, stories from the lives of the Gurus, including the Janamsakhis of Guru Nanak.
+    reference: Janamsakhis
+
+paradox_held:
+  - tension: "A story may not be literally true, and a story is true."
+    held_by: >
+      Judaism, whose interpreters read scripture in several senses at once,
+      from the plain meaning (peshat) to the hidden (sod); Christianity, with
+      its literal and spiritual senses of scripture; and every tradition
+      that teaches through parables, which are true without being reports.
+    note: The literal and the true are not always the same thing, and both are kept.
+  - tension: "The story must be told the same way every time, and the story is new every time it is told."
+    held_by: >
+      Judaism, where the Haggadah's words are fixed and yet "in every
+      generation a person must see himself as if he had come out of Egypt"
+      (Mishnah Pesachim 10:5); Hinduism, where katha performers retell the
+      same epics in their own words and places.
+    note: Fidelity and renewal are both kept. Tyler's word for the second is restory.
+
+restory: >
+  About four thousand years ago, someone in Mesopotamia pressed into clay
+  the story of a king who lost his friend and went looking for a way not to
+  die. He did not find it. In the version that became standard, he comes
+  home and shows a boatman the walls of his city, as if to say: this is what
+  lasts. It is one of the oldest stories anyone can still read, and it is
+  about grief.
+
+open_questions:
+  - Did stories begin as explanation, as instruction, or as company in the dark?
+  - What changes when the storyteller is a machine, or the listener is?
+
+checked_on: "2026-09-24"

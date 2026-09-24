@@ -1,0 +1,173 @@
+# Origination declaration: rough draft, 2026-09-24. Not yet read by Tyler.
+id: sky-calendars
+status: rough
+subject: Knowing that the sky keeps time, and building to keep time with it
+kind: knowledge
+summary: >
+  Every people that has left a record watched the Moon, the Sun and the
+  seasons. The oldest claims of written-down sky time are disputed: notched
+  bones such as the Ishango bone (about 20,000 years old) and dots in Ice
+  Age cave art. Firmer ground is a row of twelve pits at Warren Field,
+  Scotland, about 10,000 years old, read as a lunar calendar corrected by
+  the midwinter sunrise, and Stonehenge, whose great sarsen stones were set
+  up about 2500 BC to frame the midsummer sunrise and the midwinter sunset.
+
+epigraph:
+  line: "Time's a loop, bending, never quite the same"
+  from: The TimeLord, from his collected raps (untitled)
+
+when:
+  summary: Claimed from about 20,000 years ago; a proposed calendar monument about 10,000 years ago; Stonehenge about 4,500 years ago
+  years_ago: {from: 20000, to: 4500}
+  calendar: Warren Field, 8th millennium BC; Stonehenge sarsens, c. 2500 BC
+  confidence: medium
+  note: >
+    Watching the sky is surely much older than any record of it. The
+    earliest claims of recorded sky time are the most disputed ones.
+
+how:
+  enabler: Repeated watching, remembered and then marked, in notches, pits and finally stone
+  confidence: medium
+  note: The enabler is less a tool than a habit, made lasting by marks and monuments.
+
+why:
+  problem: Knowing when the seasons will turn, when animals will move, when to plant, and when to gather
+  confidence: medium
+  note: >
+    The practical problem is clear. Many sky monuments also mark ceremony
+    and the dead, so the two uses are hard to separate.
+
+where:
+  first:
+    place: Unknown. Warren Field, near Crathes in Aberdeenshire, Scotland, is the earliest monument proposed as a calendar.
+    why_there: >
+      Northern latitudes have strong seasons, which makes marking them
+      worth the effort. The site was found from the air as crop marks,
+      a method that favours some landscapes over others.
+  most_prominent:
+    place: No single place; Stonehenge (Wiltshire, England) is among the best known.
+    why_there: >
+      Sky calendars were made independently in many parts of the world.
+      Stonehenge is prominent partly because it survives, and partly
+      because it is so well studied.
+  confidence: low
+  note: The first sky calendar was probably not made of anything that lasts.
+
+who:
+  attributable: false
+  note: No one. Calendars were refined by generations of watchers, most of them unnamed.
+
+evidence:
+  - source: >
+      Gaffney, V. et al. (2013). Time and a place: a luni-solar
+      "time-reckoner" from 8th millennium BC Scotland. Internet Archaeology 34.
+    doi: 10.11141/ia.34.1
+    supports: Twelve pits at Warren Field that appear to track lunar months, with an alignment on the midwinter sunrise to correct the lunar year to the solar one.
+    confidence: medium
+    contested: false
+    note: The reading of the pits as a calendar is an interpretation, and a careful one.
+  - source: English Heritage. Understanding Stonehenge.
+    url: https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/understanding-stonehenge/
+    supports: The sarsens were set up about 2500 BC, aligned on the midsummer sunrise and the midwinter sunset.
+    confidence: high
+    contested: false
+  - source: de Heinzelin, J. (1962). Ishango. Scientific American 206(6), 105-116.
+    doi: 10.1038/scientificamerican0662-105
+    supports: The Ishango bone, a notched bone from the Semliki River area, Democratic Republic of the Congo, about 20,000 years old.
+    confidence: medium
+    contested: true
+    note: >
+      That the notches count anything is disputed, and the reading of them
+      as a lunar record (Marshack, A. 1972, The Roots of Civilization,
+      McGraw-Hill) is one proposal among several.
+  - source: >
+      Bacon, B. et al. (2023). An Upper Palaeolithic proto-writing system and
+      phenological calendar. Cambridge Archaeological Journal 33(3), 371-389.
+    doi: 10.1017/s0959774322000415
+    supports: A claim that dots and marks in Ice Age cave art count lunar months tied to animal life cycles.
+    confidence: low
+    contested: true
+    note: >
+      Disputed by García-Bustos, M., Rivero, O. and Sauvet, G. (2023),
+      Journal of Paleolithic Archaeology 6. doi 10.1007/s41982-023-00158-8.
+  - source: >
+      Pernicka, E. et al. (2020). Why the Nebra Sky Disc dates to the Early
+      Bronze Age. An overview of the interdisciplinary results. Archaeologia
+      Austriaca 104, 89-122.
+    doi: 10.1553/archaeologia104s89
+    supports: The Nebra sky disc, found in Germany, dates to the Early Bronze Age and shows the Sun or Moon, a crescent and stars.
+    confidence: medium
+    contested: true
+    note: >
+      Challenged by Gebhard, R. and Krause, R. (2020), "Critical comments on
+      the find complex of the so-called Nebra Sky Disk", Archäologische
+      Informationen 43, which argues for an Iron Age date.
+      https://journals.ub.uni-heidelberg.de/index.php/arch-inf/article/view/81419
+
+consensus:
+  - Stonehenge's sarsens were aligned on the solstices about 2500 BC.
+  - Many peoples, independently, built monuments and calendars around the Sun and Moon.
+
+speculation:
+  - That Ice Age marks on bone and cave walls count days or months.
+  - That Warren Field is a calendar. Well argued and still an interpretation.
+  - That sky-watching began as practical timekeeping and only later became sacred, or the reverse.
+
+morphs:
+  - stage: Watching
+    when: Undatable, and surely very old
+    change: The Moon's phases and the Sun's turning points are noticed and remembered.
+  - stage: Marks and pits
+    when: Claimed from about 20,000 years ago; proposed at Warren Field about 10,000 years ago
+    change: Time is kept in notches and pits.
+  - stage: Monuments
+    when: About 4,500 years ago at Stonehenge, and elsewhere
+    change: Stone frames the solstice, and the calendar becomes a place to gather.
+  - stage: Sacred calendars
+    when: The last three thousand years
+    change: Festivals and fasts are set by the Sun and the Moon.
+  - stage: Today
+    when: Now
+    change: Atomic clocks keep time for machines, while sacred calendars still follow the sky.
+
+tenet_links:
+  - tradition: Buddhism
+    how_held: Uposatha observance days follow the Moon's phases, and Vesak is kept at a full moon.
+    reference: Uposatha; Vesak
+  - tradition: Chinese traditions
+    how_held: The Lunar New Year and other festivals follow the lunisolar calendar.
+    reference: Lunar New Year
+  - tradition: Christianity
+    how_held: Easter's date is computed from the spring equinox and the full moon.
+    reference: The computus (Easter reckoning)
+  - tradition: Hinduism
+    how_held: Festivals are set by the lunisolar calendar (panchang); Makar Sankranti marks the Sun's entry into Makara (Capricorn).
+    reference: Panchang; Makar Sankranti
+  - tradition: Islam
+    how_held: The Hijri calendar is lunar; in many communities Ramadan begins when the new crescent is sighted.
+    reference: Hijri calendar
+  - tradition: Judaism
+    how_held: The calendar is lunisolar; each new month (Rosh Chodesh) begins with the new moon.
+    reference: Rosh Chodesh
+
+paradox_held:
+  - tension: "Time is a circle, and time is a line."
+    held_by: >
+      Judaism and Christianity, which keep a yearly cycle of festivals
+      inside a history that moves toward a promised end; Hinduism and
+      Buddhism, which teach vast cycles of ages and also a path out of the
+      cycle (moksha, nirvana).
+    note: The year returns and history does not. Both are kept.
+
+restory: >
+  Ten thousand years ago, in what is now Scotland, people dug twelve pits
+  in an arc. If the pits are what they seem, each stood for a month of the
+  Moon, and every midwinter the sunrise over a notch in the hills told them
+  when to reset the count. They had no writing to keep a calendar in, so
+  they kept it in the ground.
+
+open_questions:
+  - Did people first keep time by the Moon or by the Sun?
+  - How much of what looks like a calendar was also, or mainly, a place of ceremony?
+
+checked_on: "2026-09-24"

@@ -1,0 +1,106 @@
+# Origination declaration: TEMPLATE (rough draft, 2026-09-24)
+#
+# Copy this file to declarations/NN-<id>.yaml, where NN is the next free
+# number, and replace every value. The schema is
+# schema/origination-declaration.schema.json, and
+# `python tools/validate_declarations.py` checks every file against it.
+#
+# Four rules hold for every declaration:
+#   1. Never invent a source. If nothing checkable exists, say the evidence
+#      is thin. "We don't know yet" is a complete answer.
+#   2. Keep consensus and speculation apart. Mark a contested source as
+#      contested, and cite the work that contests it.
+#   3. Rank no tradition. List tenet_links alphabetically, and describe each
+#      tradition as its own members would recognise it.
+#   4. Keep paradox-held tensions. Never resolve one by deleting a side.
+
+id: template                       # lower-case slug; the file is NN-<id>.yaml
+status: rough                      # rough | draft | reviewed
+subject: What originated, in a few plain words
+kind: emotion                      # emotion | idea | belief | knowledge | thought
+summary: >
+  Two or three sentences a newcomer can read first: what it is, the earliest
+  good evidence for it, and how sure we are.
+
+epigraph:                          # optional; Tyler's own words only
+  line: "A line of Tyler's, quoted exactly"
+  from: The TimeLord, "Song title"
+
+when:
+  summary: About how long ago, in words
+  years_ago: {from: 100000, to: 50000}   # oldest bound first
+  calendar: c. 2000 BCE            # optional; historical dates only
+  confidence: medium               # high | medium | low | speculative
+  note: >
+    What the dates rest on, and what might move them. The feeling or idea
+    itself may be older than any trace it left: say so when it applies.
+
+how:
+  enabler: The tool, practice or event that made it possible, if any
+  confidence: low
+  note: Why we think so, or why no enabler can be named.
+
+why:
+  problem: The problem it solves
+  confidence: speculative
+  note: Whose argument this is, and what would count against it.
+
+where:
+  first:
+    place: Where the earliest evidence is
+    why_there: Why that place, including how much is down to where things
+      survive and where people have dug
+  most_prominent:
+    place: Where it became most prominent, or "no single place"
+    why_there: Why there
+  confidence: low
+  note: Anything else about place.
+
+who:
+  attributable: false              # true only when a person is genuinely
+                                   # associated with it; then add attribution
+  note: Most origins have no name, and this says so.
+
+evidence:
+  - source: Author, A. (Year). Title. Journal Volume(Issue), pages.
+    # doi: 10.xxxx/xxxxx           # when the source has one
+    # url: https://...             # when it has no DOI
+    supports: What this source shows
+    confidence: medium
+    contested: false               # true when published work disputes it
+    note: Who disputes it, and where.
+
+consensus:
+  - What most specialists would accept.
+
+speculation:
+  - What is argued for, plausible, or ours, and not settled.
+
+morphs:
+  - stage: First trace
+    when: When
+    change: What it looked like then
+  - stage: Today
+    when: Now
+    change: What it looks like now
+
+tenet_links:                       # alphabetical by tradition
+  - tradition: A tradition
+    how_held: How its members hold this, in terms they would recognise
+    reference: A text, practice or source anyone can look up
+    note: Optional.
+
+paradox_held:
+  - tension: "P, and also not-P, held together"
+    held_by: Who holds both sides at once
+    note: Optional. Never resolve it by deleting a side.
+
+restory: >
+  Tyler's word, from his own list: "Restory - Retell a story". A few
+  sentences retelling the origin in plain words. It is a retelling, not
+  evidence, and it may not claim more than the evidence above.
+
+open_questions:
+  - What would change this declaration if we learned it?
+
+checked_on: "2026-09-24"           # when the sources were last checked

@@ -1,0 +1,168 @@
+# Origination declaration: rough draft, 2026-09-24. Not yet read by Tyler.
+id: law-written-down
+status: rough
+subject: The idea that rules can be written down, made public, and applied to everyone
+kind: idea
+summary: >
+  Writing began about 5,300 years ago, mostly to keep accounts. Within
+  about a thousand years, rulers in Mesopotamia were using it to publish
+  laws. The oldest law collection that survives is the Laws of Ur-Nammu, of
+  about 2100 to 2050 BCE; the best known is the Laws of Hammurabi, of about
+  1755 to 1750 BCE, carved on a basalt stele now in the Louvre. This is one
+  of the few origins in this repository with names attached.
+
+epigraph:
+  line: "What if my vision / Is more than what's written"
+  from: The TimeLord, "Saddest Class Clown"
+
+when:
+  summary: Writing about 5,300 years ago; published laws by about 4,100 years ago
+  years_ago: {from: 4400, to: 3750}
+  calendar: c. 2400 BCE (reforms of Uru-inimgina, known only indirectly) to c. 1755-1750 BCE (Hammurabi)
+  confidence: high
+  note: >
+    Unwritten law and custom are certainly older, and cannot be dated. What
+    is dated here is law written down. The 24th-century BCE reforms of
+    Uru-inimgina of Lagash are known from inscriptions that describe them,
+    not from a law collection.
+
+how:
+  enabler: Writing (cuneiform on clay, and later on stone), which began for accounting
+  confidence: high
+  note: >
+    Proto-cuneiform tablets from Uruk (c. 3300 BCE) are mostly economic
+    records (Nissen, Damerow and Englund 1993). In Egypt, inscribed labels
+    from tomb U-j at Abydos are of about the same age (Dreyer 1998). Writing
+    was invented for keeping track, and only later used for law.
+
+why:
+  problem: >
+    Settling disputes among many people who do not know each other, so that
+    justice does not depend on who you know; and, in the rulers' own words,
+    protecting the weak from the strong.
+  confidence: medium
+  note: >
+    The prologue and epilogue of Hammurabi's laws present them as given so
+    that the strong would not oppress the weak (paraphrased; see Roth 1997
+    for a translation). That is a stated purpose, which is not always the
+    same as the real one.
+
+where:
+  first:
+    place: Southern Mesopotamia (Sumer, modern Iraq), at Ur
+    why_there: >
+      Dense cities, powerful temples and kings, and a writing system already
+      in daily use for administration.
+  most_prominent:
+    place: Babylon
+    why_there: >
+      Hammurabi's laws were copied and studied for centuries. The best
+      preserved stele was carried off as plunder to Susa, in Elam (modern
+      Iran), and found there in 1901-02.
+  confidence: high
+  note: Clay survives well in dry Mesopotamian ground, which helps the record here more than in most places.
+
+who:
+  attributable: true
+  attribution: >
+    Ur-Nammu of Ur, or his son Shulgi (the attribution is disputed), for the
+    oldest surviving collection; Hammurabi of Babylon for the best known.
+  note: >
+    These are the rulers in whose names the laws were issued. The scribes
+    and judges who drafted them are not named.
+
+evidence:
+  - source: >
+      Roth, M. T. (1997). Law Collections from Mesopotamia and Asia Minor,
+      2nd edition. Writings from the Ancient World 6. Scholars Press.
+    supports: Translations of the Laws of Ur-Nammu, Hammurabi and other collections, with dating and discussion.
+    confidence: high
+    contested: false
+    note: The standard English edition.
+  - source: >
+      Nissen, H. J., Damerow, P. and Englund, R. K. (1993). Archaic
+      Bookkeeping: Early Writing and Techniques of Economic Administration in
+      the Ancient Near East. University of Chicago Press.
+    supports: The earliest Uruk tablets, about 3300 BCE, are overwhelmingly administrative.
+    confidence: high
+    contested: false
+  - source: >
+      Dreyer, G. (1998). Umm el-Qaab I: Das prädynastische Königsgrab U-j und
+      seine frühen Schriftzeugnisse. Philipp von Zabern.
+    supports: Inscribed labels from tomb U-j at Abydos, Egypt, among the earliest writing anywhere.
+    confidence: medium
+    contested: true
+    note: Whether these labels are true writing, and their exact date, are debated.
+
+consensus:
+  - Writing began in Mesopotamia about 3300 BCE, with Egypt at about the same time, and was first used mainly for accounts.
+  - The Laws of Ur-Nammu are the oldest surviving law collection; the Laws of Hammurabi are the best known.
+
+speculation:
+  - That writing laws down made justice fairer in practice. The stated aim and the effect are different questions.
+  - Whether Ur-Nammu or Shulgi issued the first collection.
+
+morphs:
+  - stage: Custom
+    when: Before writing; undatable
+    change: Rules remembered and enforced by elders and kin.
+  - stage: First written law
+    when: c. 2100-2050 BCE
+    change: Rules and penalties written down in a ruler's name.
+  - stage: Public stone
+    when: c. 1755-1750 BCE
+    change: Laws carved on a stele where people could see them.
+  - stage: Scripture as law
+    when: The last three thousand years
+    change: Law understood as given by God or grounded in the order of things, and studied as a sacred duty.
+  - stage: Today
+    when: Now
+    change: Constitutions, human rights law, and now rules written for machines to follow.
+
+tenet_links:
+  - tradition: Buddhism
+    how_held: The Vinaya, the monastic code, sets rules for monks and nuns, with the reasons each rule was made.
+    reference: Vinaya Pitaka
+  - tradition: Christianity
+    how_held: >
+      The Ten Commandments, shared with Judaism; the teaching that love
+      fulfils the law; canon law in some churches.
+    reference: Exodus 20; Romans 13:8-10
+  - tradition: Confucianism
+    how_held: >
+      Ritual propriety (li) and virtue are preferred to punishment: people
+      led by laws and punishments avoid them without shame, while people led
+      by virtue and ritual have a sense of shame and correct themselves
+      (paraphrase).
+    reference: Analects 2.3
+  - tradition: Hinduism
+    how_held: Dharma, and the Dharmashastra texts that set out duties and law.
+    reference: Dharmashastra
+  - tradition: Islam
+    how_held: Sharia, God's law, and fiqh, the human work of understanding and applying it.
+    reference: Sharia; fiqh
+  - tradition: Judaism
+    how_held: The Torah as law, and halakha, the path of practice worked out from it across generations.
+    reference: Halakha
+
+paradox_held:
+  - tension: "The law is written outside us, and the law is written on the heart."
+    held_by: >
+      Judaism and Christianity ("I will put my law in their inward parts,
+      and write it in their hearts", Jeremiah 31:33, KJV; Romans 2:15), and
+      Confucianism in its preference for virtue over punishment
+      (Analects 2.3).
+    note: Both the stone and the heart are kept; neither makes the other unnecessary.
+
+restory: >
+  Around 1750 BCE, a king had his laws carved into a black stone taller than
+  a man, with an image of himself standing before a god at the top. Anyone
+  could see it, even people who could not read it. Six hundred years later,
+  raiders hauled it off as a trophy. It waited in the ground at Susa for
+  three thousand years, until 1901, and it still speaks.
+
+open_questions:
+  - Did writing law down make it fairer, or only more lasting?
+  - What changes when the one who must follow a written rule is a machine?
+
+checked_on: "2026-09-24"

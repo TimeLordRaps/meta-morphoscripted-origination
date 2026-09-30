@@ -1,0 +1,180 @@
+# Origination declaration: rough draft, 2026-09-24. Not yet read by Tyler.
+id: care-for-the-vulnerable
+status: rough
+subject: Compassion that keeps alive someone who cannot keep up
+kind: emotion
+summary: >
+  Some ancient skeletons belong to people who lived for years with
+  conditions that would have made surviving alone hard or impossible. The
+  strongest case is a Neanderthal child with Down syndrome at Cova Negra,
+  Spain, who lived to at least six, between about 273,000 and 146,000 years
+  ago. An older and more debated case is a toothless individual at Dmanisi,
+  Georgia, about 1.77 million years ago. Whether these show compassion, or
+  only survival, is argued in print.
+
+epigraph:
+  line: "Call me careless cause I want to care more!"
+  from: The TimeLord, "Call me careless"
+
+when:
+  summary: Possibly 1.77 million years ago; more securely by 273,000 to 146,000 years ago
+  years_ago: {from: 1770000, to: 146000}
+  confidence: low
+  note: >
+    The window is wide because the oldest case (Dmanisi) allows other
+    readings: its owner may have eaten soft foods without help. The Cova
+    Negra child is harder to explain without sustained help from others.
+
+how:
+  enabler: Food sharing and food processing (stone tools, and later cooking) that let the group feed someone who could not feed themselves
+  confidence: speculative
+  note: >
+    Lordkipanidze et al. (2005) raise both possibilities for Dmanisi: help
+    from others, or soft plant and animal foods. Neither is shown.
+
+why:
+  problem: A member of the group who cannot feed, move or protect themselves
+  confidence: speculative
+  note: >
+    Care may have paid off for groups whose members could count on it
+    (Spikins, Rutherford and Needham 2010). That is an argument, not a
+    finding.
+
+where:
+  first:
+    place: Dmanisi, Georgia (if that case is accepted); otherwise Cova Negra, near Valencia, Spain
+    why_there: >
+      Where the bones happened to survive and be found. Dmanisi is among the
+      earliest sites of humans outside Africa; nothing suggests care began
+      there.
+  most_prominent:
+    place: No single place.
+    why_there: Care for the sick, the old and the young is found in every known human society.
+  confidence: low
+  note: The record of care depends on skeletons that show healed injury or lifelong conditions, which are rare.
+
+who:
+  attributable: false
+  note: No one. The Cova Negra child was nicknamed "Tina" by the research team; the carers are unknown.
+
+evidence:
+  - source: >
+      Lordkipanidze, D. et al. (2005). The earliest toothless hominin skull.
+      Nature 434, 717-718.
+    doi: 10.1038/434717b
+    supports: >
+      An individual at Dmanisi, Georgia, about 1.77 million years ago, lost
+      all but one tooth years before death and survived.
+    confidence: medium
+    contested: true
+    note: Whether survival needed help from others is disputed; soft foods are an alternative.
+  - source: >
+      Conde-Valverde, M. et al. (2024). The child who lived: Down syndrome
+      among Neanderthals? Science Advances 10(26), eadn9310.
+    doi: 10.1126/sciadv.adn9310
+    supports: >
+      A Neanderthal child at Cova Negra, Spain, with an inner-ear condition
+      consistent with Down syndrome, lived to at least six, which the
+      authors argue required sustained care from more than one person.
+    confidence: medium
+    contested: false
+    note: The diagnosis rests on one inner-ear bone, and the paper's own title carries a question mark.
+  - source: >
+      Dettwyler, K. A. (1991). Can paleopathology provide evidence for
+      "compassion"? American Journal of Physical Anthropology 84(4), 375-384.
+    doi: 10.1002/ajpa.1330840402
+    supports: >
+      A critical view: that someone with a disability survived does not by
+      itself show compassion, or how they were treated.
+    confidence: medium
+    contested: false
+    note: Included because it is the main caution against over-reading the other two.
+  - source: >
+      Spikins, P., Rutherford, H. and Needham, A. (2010). From homininity to
+      humanity: compassion from the earliest archaics to modern humans.
+      Time and Mind 3(3), 303-325.
+    doi: 10.2752/175169610x12754030955977
+    supports: An argument that compassion developed in stages across human evolution.
+    confidence: low
+    contested: false
+    note: An interpretive framework, not a dating.
+
+consensus:
+  - Some ancient individuals survived for years with conditions that made life alone very hard.
+  - Neanderthals looked after at least some of their sick and injured.
+
+speculation:
+  - That the survival of the Dmanisi individual required help.
+  - That this help was felt as compassion, rather than done from habit or obligation.
+  - That groups whose members cared for one another did better over time.
+
+morphs:
+  - stage: First trace
+    when: Possibly 1.77 million years ago; more securely by 273,000 to 146,000 years ago
+    change: Someone who cannot keep up is kept alive.
+  - stage: Obligation
+    when: With written law and scripture, the last 4,000 years or so
+    change: Care for the widow, the orphan, the poor and the stranger becomes a written duty.
+  - stage: Institutions
+    when: Last two thousand years
+    change: Hospitals, almshouses, community kitchens and public welfare.
+  - stage: Today
+    when: Now
+    change: Care is asked of strangers at scale, and increasingly of machines, which raises the question of who, or what, can care.
+
+tenet_links:
+  - tradition: Buddhism
+    how_held: Karuna (compassion) is one of the four boundless states (brahmaviharas) to be cultivated toward all beings.
+    reference: The four brahmaviharas
+  - tradition: Christianity
+    how_held: >
+      Caring for the hungry, the sick and the stranger is caring for Christ;
+      the Good Samaritan is the neighbour who stops.
+    reference: Matthew 25:35-40; Luke 10:25-37
+  - tradition: Confucianism
+    how_held: >
+      Ren (humaneness). Mencius argues that anyone who sees a child about to
+      fall into a well feels alarm and compassion, and that this feeling is
+      the beginning of humaneness.
+    reference: Mencius 2A:6
+  - tradition: Hinduism
+    how_held: Daya (compassion) and seva (selfless service) as virtues and practice.
+    reference: Daya; seva
+  - tradition: Islam
+    how_held: >
+      Zakat, obligatory almsgiving, is one of the Five Pillars; its
+      recipients include the poor, the needy and the traveller.
+    reference: Qur'an 9:60
+  - tradition: Judaism
+    how_held: Tzedakah (righteous giving) and gemilut chasadim (acts of loving-kindness).
+    reference: Tzedakah; gemilut chasadim
+  - tradition: Non-religious people
+    how_held: Humanist and secular ethics of care, grounded in shared human need rather than in revelation.
+  - tradition: Sikhism
+    how_held: Seva (selfless service), and langar, the free community kitchen open to everyone.
+    reference: Langar; seva
+
+paradox_held:
+  - tension: "To give is to lose, and to give is to gain."
+    held_by: >
+      Islam, where zakat comes from a root that carries both purification and
+      growth; Christianity ("It is more blessed to give than to receive",
+      Acts 20:35); Buddhism, where generosity (dana) is itself a source of
+      merit.
+    note: The giver is poorer by the gift and richer by it, in the same act.
+  - tension: "Care is owed to those who cannot repay it, and care is what holds a group together."
+    held_by: Most traditions, and most families.
+    note: Selfless and useful at once. Keeping only one side misdescribes both.
+
+restory: >
+  Somewhere in what is now Spain, a Neanderthal child was born different.
+  The child could not have kept up with the group alone, and did not have
+  to. Someone carried, fed and watched over that child for at least six
+  years. We will never know their names. We know what they did.
+
+open_questions:
+  - Can care be told apart from obligation or habit in bones alone?
+  - Is compassion one capacity that grew, or several that joined?
+  - What would it mean for a machine to care, and is that question inside or outside this tenet?
+
+checked_on: "2026-09-24"

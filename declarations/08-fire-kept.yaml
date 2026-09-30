@@ -1,0 +1,169 @@
+# Origination declaration: rough draft, 2026-09-24. Not yet read by Tyler.
+id: fire-kept
+status: rough
+subject: Knowing how to keep fire, and later how to make it
+kind: knowledge
+summary: >
+  Keeping fire and making fire are different pieces of knowledge. Burned
+  bone and plant ash inside Wonderwerk Cave, South Africa, suggest fire was
+  used there about a million years ago. Burned flint at Gesher Benot
+  Ya'aqov, Israel, is about 790,000 years old, and a hearth used again and
+  again at Qesem Cave, Israel, about 300,000. The earliest evidence of
+  making fire, by striking pyrite, comes from Barnham, England, about
+  400,000 years ago.
+
+epigraph:
+  line: "Wisdom's a fire, lit from every fall"
+  from: The TimeLord, from his collected raps (untitled)
+
+when:
+  summary: Fire used about a million years ago; habitual by about 400,000 to 300,000 years ago; made at will by about 400,000
+  years_ago: {from: 1000000, to: 300000}
+  confidence: medium
+  note: >
+    Early fire is hard to tell from wildfire. Roebroeks and Villa (2011)
+    argue that habitual use of fire in Europe appears only after about
+    400,000 years ago, so earlier use may have been occasional.
+
+how:
+  enabler: Capturing and tending natural fire first; later, striking pyrite against flint to make sparks
+  confidence: medium
+  note: >
+    Pyrite does not occur naturally at Barnham, so it seems to have been
+    brought there (Davis et al. 2025).
+
+why:
+  problem: Cold, dark, predators, and food that is hard to eat raw
+  confidence: high
+  note: >
+    The practical uses are not in doubt. Fire also lengthened the day and
+    made a place to gather at night (see the-fireside-story).
+
+where:
+  first:
+    place: Southern Africa (Wonderwerk Cave, Northern Cape), for use inside a cave
+    why_there: >
+      A deep cave preserves ash and burned bone that open sites lose. Where
+      "first" is depends heavily on where such traps exist.
+  most_prominent:
+    place: No single place. Every known human society uses fire.
+    why_there: Fire travelled everywhere people did.
+  confidence: low
+  note: The earliest known place where fire was made, not only kept, is Barnham, Suffolk, England.
+
+who:
+  attributable: false
+  note: >
+    No one. The Wonderwerk fire users were probably Homo erectus; the
+    Barnham fire-makers were possibly early Neanderthals.
+
+evidence:
+  - source: >
+      Berna, F. et al. (2012). Microstratigraphic evidence of in situ fire in
+      the Acheulean strata of Wonderwerk Cave, Northern Cape province, South
+      Africa. PNAS 109(20).
+    doi: 10.1073/pnas.1117620109
+    supports: Burned bone and plant ash in place inside the cave, about a million years old.
+    confidence: medium
+    contested: false
+  - source: >
+      Goren-Inbar, N. et al. (2004). Evidence of hominin control of fire at
+      Gesher Benot Ya'aqov, Israel. Science 304, 725-727.
+    doi: 10.1126/science.1095443
+    supports: Burned flint and seeds in patterns suggesting hearths, about 790,000 years ago.
+    confidence: medium
+    contested: false
+  - source: >
+      Shahack-Gross, R. et al. (2014). Evidence for the repeated use of a
+      central hearth at Middle Pleistocene (300 ky ago) Qesem Cave, Israel.
+      Journal of Archaeological Science 44, 12-21.
+    doi: 10.1016/j.jas.2013.11.015
+    supports: A hearth used repeatedly in one place, about 300,000 years ago.
+    confidence: high
+    contested: false
+  - source: >
+      Roebroeks, W. and Villa, P. (2011). On the earliest evidence for
+      habitual use of fire in Europe. PNAS 108(13), 5209-5214.
+    doi: 10.1073/pnas.1018116108
+    supports: Habitual fire use in Europe appears only after about 400,000 years ago.
+    confidence: medium
+    contested: true
+    note: The timing and meaning of early fire use remain under debate.
+  - source: Davis, R. et al. (2025). Earliest evidence of making fire. Nature 649, 631-637.
+    doi: 10.1038/s41586-025-09855-6
+    supports: Fire made deliberately, using pyrite, at Barnham, Suffolk, England, about 400,000 years ago.
+    confidence: medium
+    contested: false
+    note: Recent; later work will test it.
+
+consensus:
+  - Humans and their relatives used fire long before they could make it.
+  - Regular use of fire is well established by about 400,000 to 300,000 years ago.
+
+speculation:
+  - That fire use a million years ago was controlled rather than opportunistic.
+  - That cooking with fire shaped human bodies and brains. Argued by some researchers, and outside what this declaration's sources show.
+
+morphs:
+  - stage: Kept
+    when: About a million years ago
+    change: Fire is carried and tended, and must not go out.
+  - stage: Made
+    when: By about 400,000 years ago
+    change: Fire can be started at will, so it can be lost and found again.
+  - stage: Hearth
+    when: About 300,000 years ago and after
+    change: Fire has a fixed place, and the group gathers around it.
+  - stage: Sacred fire
+    when: The last few thousand years
+    change: Fires kept burning on altars and in temples, and fire as a sign of the divine.
+  - stage: Today
+    when: Now
+    change: Fire hidden inside engines and power stations, and candles still lit by hand.
+
+tenet_links:
+  - tradition: Christianity
+    how_held: The new fire and the Paschal candle at the Easter Vigil; the Spirit appearing as tongues of fire at Pentecost.
+    reference: Acts 2:3
+  - tradition: Hinduism
+    how_held: >
+      Agni, fire, carries offerings to the gods in Vedic rites; a Hindu
+      wedding is sealed by seven steps taken around the sacred fire.
+    reference: Agni; saptapadi
+  - tradition: Judaism
+    how_held: >
+      "The fire shall ever be burning upon the altar; it shall never go out"
+      (KJV); the eternal light (ner tamid) above the ark in a synagogue.
+    reference: Leviticus 6:13 (6:6 in Hebrew numbering)
+  - tradition: Zoroastrianism
+    how_held: Fire is a symbol of purity, and the highest grade of temple fire (Atash Behram) is kept burning continuously.
+    reference: Atash Behram
+
+paradox_held:
+  - tension: "Fire gives life, and fire destroys."
+    held_by: >
+      Hinduism, where Shiva as Nataraja dances within a ring of fire as both
+      creation and destruction; Christianity, where fire is both the Spirit
+      and an image of judgement.
+    note: The same fire warms and burns; both meanings are kept.
+  - tension: "Keep the fire burning, and let the fire go out."
+    held_by: >
+      Buddhism, for which nirvana means "blowing out", the quenching of the
+      fires of craving, set beside the many traditions that keep sacred
+      fires alight.
+    note: >
+      This tension runs across traditions rather than inside one, and is
+      recorded because a person can hold both images at once.
+
+restory: >
+  A million years ago, in a deep cave in southern Africa, someone kept a
+  fire going. Hundreds of thousands of years later, in what is now England,
+  someone struck a stone that did not belong there against flint, and a
+  spark caught. From then on, fire was not only something you kept. It was
+  something you knew.
+
+open_questions:
+  - When did fire stop being borrowed from lightning and start being made?
+  - Did the fire make the gathering, or the gathering keep the fire?
+
+checked_on: "2026-09-24"

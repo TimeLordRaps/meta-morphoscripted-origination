@@ -1,0 +1,171 @@
+# Origination declaration: rough draft, 2026-09-24. Not yet read by Tyler.
+id: the-mark-that-means
+status: rough
+subject: The idea that a mark or an ornament can stand for something
+kind: idea
+summary: >
+  At some point people began making marks and ornaments that do nothing
+  practical: a zigzag cut into a shell, beads pierced for stringing, a
+  crosshatch drawn in ochre. Such things suggest the idea that a thing can
+  mean something beyond itself. The oldest candidate is a shell engraved
+  by Homo erectus on Java, 540,000 to 430,000 years ago; its meaning, if it
+  had one, is unknown. Shell beads in Morocco are at least 142,000 years
+  old, and engraved and drawn ochre at Blombos Cave, South Africa, is about
+  77,000 to 73,000 years old.
+
+epigraph:
+  line: "Carving out signs from the lines in all my / riddles."
+  from: The TimeLord, from his collected raps (untitled)
+
+when:
+  summary: Possibly half a million years ago; clearly by about 142,000 years ago
+  years_ago: {from: 540000, to: 73000}
+  confidence: medium
+  note: >
+    The Trinil engraving is accepted as deliberate; whether it meant
+    anything is not known. The beads and the Blombos pieces are much more
+    widely read as symbolic.
+
+how:
+  enabler: Shell, ochre and stone tools fine enough to engrave and pierce
+  confidence: medium
+  note: >
+    Ochre was also used practically (as glue or skin protection), so its
+    presence alone is not a symbol. The engraving is what counts.
+
+why:
+  problem: >
+    Showing who you are and whom you belong to (beads); keeping or sharing
+    a meaning outside one head (marks).
+  confidence: speculative
+  note: The identity reading of beads is common in the literature; the reading of abstract marks is open.
+
+where:
+  first:
+    place: Trinil, Java (if the engraving meant something); otherwise North Africa (Bizmoune Cave, Morocco)
+    why_there: >
+      Trinil's shells were collected in the 1890s and re-examined with new
+      methods only recently. Coastal caves in North and South Africa hold
+      shells and ochre and have been dug with care; the pattern may reflect
+      where people have looked.
+  most_prominent:
+    place: Southern Africa (Blombos Cave and nearby sites)
+    why_there: >
+      A dense run of engraved ochre, shell beads and a drawing, excavated
+      over decades by one long-running project.
+  confidence: low
+  note: The first place and the most prominent one may both move as more coasts and caves are studied.
+
+who:
+  attributable: false
+  note: No one. The Trinil engraver was probably Homo erectus; the Blombos makers were Homo sapiens.
+
+evidence:
+  - source: >
+      Joordens, J. C. A. et al. (2015). Homo erectus at Trinil on Java used
+      shells for tool production and engraving. Nature 518, 228-231.
+    doi: 10.1038/nature13962
+    supports: A deliberate geometric engraving on a freshwater shell, 540,000 to 430,000 years old.
+    confidence: medium
+    contested: true
+    note: The engraving is accepted as deliberate; whether it was symbolic is not known, and the authors say so.
+  - source: >
+      Sehasseh, E. M. et al. (2021). Early Middle Stone Age personal
+      ornaments from Bizmoune Cave, Essaouira, Morocco. Science Advances
+      7(39), eabi8620.
+    doi: 10.1126/sciadv.abi8620
+    supports: Perforated shell beads at least 142,000 years old.
+    confidence: high
+    contested: false
+  - source: >
+      Henshilwood, C. S. et al. (2002). Emergence of modern human behavior:
+      Middle Stone Age engravings from South Africa. Science 295, 1278-1280.
+    doi: 10.1126/science.1067575
+    supports: Engraved pieces of ochre at Blombos Cave, about 77,000 years old.
+    confidence: high
+    contested: false
+  - source: >
+      Henshilwood, C. S. et al. (2018). An abstract drawing from the
+      73,000-year-old levels at Blombos Cave, South Africa. Nature 562,
+      115-118.
+    doi: 10.1038/s41586-018-0514-3
+    supports: A crosshatched pattern drawn with ochre on a stone flake, about 73,000 years old.
+    confidence: high
+    contested: false
+
+consensus:
+  - People were making beads by at least 142,000 years ago in North Africa.
+  - Abstract engravings and a drawing were made at Blombos Cave about 77,000 to 73,000 years ago.
+
+speculation:
+  - That the Trinil zigzag meant anything.
+  - That beads marked identity or belonging. Widely argued, and still an inference.
+  - That these are the beginnings of the same capacity that later made writing.
+
+morphs:
+  - stage: First trace
+    when: 540,000 to 430,000 years ago (disputed meaning)
+    change: A pattern cut into a shell, for reasons unknown.
+  - stage: Ornament and pattern
+    when: From at least 142,000 years ago
+    change: Beads worn on the body, and abstract marks on ochre and stone.
+  - stage: Images
+    when: Tens of thousands of years ago, in many regions
+    change: Painted and carved images of animals and people.
+  - stage: Writing
+    when: About 5,300 years ago (see law-written-down)
+    change: Marks that stand for words and numbers, readable by strangers.
+  - stage: Today
+    when: Now
+    change: Symbols read by machines as well as people; a mark can now carry meaning no human reads.
+
+tenet_links:
+  - tradition: Buddhism
+    how_held: Mudras, hand gestures in images and practice that each carry a meaning, such as teaching or fearlessness.
+    reference: Mudra
+  - tradition: Christianity
+    how_held: >
+      The sign of the cross; in Catholic teaching, sacraments are
+      "efficacious signs of grace", signs that bring about what they
+      signify.
+    reference: Catechism of the Catholic Church, 1131
+  - tradition: Hinduism
+    how_held: Om, the sacred syllable, is written and chanted; the tilak is a mark of devotion worn on the forehead.
+    reference: Om; tilak
+  - tradition: Islam
+    how_held: >
+      Calligraphy of the Qur'an's words is among the highest sacred arts,
+      and a written copy of the Qur'an (mushaf) is handled with care and,
+      in most schools, in a state of ritual purity.
+    reference: Islamic calligraphy; mushaf
+  - tradition: Judaism
+    how_held: >
+      Words are written and worn or fixed to the doorpost: tefillin and the
+      mezuzah; worn-out sacred texts are buried rather than thrown away
+      (genizah).
+    reference: Deuteronomy 6:8-9
+  - tradition: Sikhism
+    how_held: The five articles of faith (the five Ks) are worn as signs of commitment.
+    reference: The five Ks
+
+paradox_held:
+  - tension: "A mark is only a mark, and a mark can be holy."
+    held_by: >
+      Traditions that teach that nothing made can contain the divine, while
+      treating written scripture with physical reverence: the Torah scroll,
+      the mushaf, and the Guru Granth Sahib, which Sikhs treat as their
+      living Guru.
+    note: Reverence for the page and humility about the page, together.
+
+restory: >
+  On a riverbank in Java, half a million years ago, someone took the tip of
+  a shark's tooth or a sharp stone and cut a zigzag into an empty mussel
+  shell. Maybe it meant something. Maybe it was just the pleasure of the
+  line. Either way, the shell kept it, and here we are, reading it.
+
+open_questions:
+  - When did a mark first mean the same thing to someone who did not make it?
+  - Did ornament (showing who you are) or notation (keeping track) come first?
+  - What is lost when the reader of a mark is a machine?
+
+checked_on: "2026-09-24"

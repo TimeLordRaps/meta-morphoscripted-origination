@@ -1,0 +1,157 @@
+# Origination declaration: rough draft, 2026-09-24. Not yet read by Tyler.
+id: trust-between-strangers
+status: rough
+subject: The belief that a stranger can be dealt with fairly, if the terms are honest and witnessed
+kind: belief
+summary: >
+  Trusting kin is old and easy to explain; trusting strangers is harder.
+  About 320,000 to 305,000 years ago at Olorgesailie, Kenya, people were
+  using obsidian brought from 25 to 95 km away, which may point to exchange
+  networks between groups. By about 1950 to 1750 BCE, merchants based at
+  Kültepe-Kanesh in Anatolia left some 23,000 clay tablets: letters,
+  contracts, loans and caravan accounts, sealed and witnessed. Trust between
+  strangers had become a system.
+
+epigraph:
+  line: "Find time to trust, then keep it invested."
+  from: The TimeLord, "Call me careless"
+
+when:
+  summary: Exchange between groups perhaps 320,000 years ago; written, witnessed trust by about 4,000 years ago
+  years_ago: {from: 320000, to: 3750}
+  calendar: Kültepe-Kanesh archives, c. 1950-1750 BCE
+  confidence: low
+  note: >
+    Two very different lines of evidence. The Olorgesailie obsidian shows
+    that stone travelled far; it does not show how (trade, gift, or people
+    walking to the source). The Kanesh tablets show trust between strangers
+    written down in detail.
+
+how:
+  enabler: Portable valuables first; then seals, clay contracts, witnesses, and standard weights
+  confidence: medium
+  note: >
+    Cylinder seals (Collon 1987) let a person sign clay, and sealed clay
+    envelopes protected the text of a contract from tampering. The idea
+    that clay tokens were the ancestor of writing (Schmandt-Besserat 1992)
+    is influential and disputed.
+
+why:
+  problem: Exchanging with people outside the family who could cheat you, and whom you may never see again
+  confidence: medium
+  note: The problem is easy to state. Which solution came first is not known.
+
+where:
+  first:
+    place: The East African Rift (Olorgesailie, Kenya), if long-distance obsidian reflects exchange
+    why_there: >
+      Obsidian sources in the Rift, and deposits that preserve and date
+      well. It is also one of the best-studied basins in human evolution.
+  most_prominent:
+    place: The Old Assyrian trade network between Assur (in modern Iraq) and Kanesh (central Anatolia, modern Türkiye)
+    why_there: >
+      Assur's merchants carried tin and textiles to Anatolia and brought back
+      silver and gold (Larsen 2015). Distance, value and repeated dealing
+      made written trust worth the trouble.
+  confidence: low
+  note: The Kanesh archive is prominent partly because it survived; other networks of the time left less.
+
+who:
+  attributable: false
+  note: >
+    Many individual merchants of Kanesh are known by name from their own
+    letters, but no one originated trust between strangers.
+
+evidence:
+  - source: >
+      Brooks, A. S. et al. (2018). Long-distance stone transport and pigment
+      use in the earliest Middle Stone Age. Science 360, 90-94.
+    doi: 10.1126/science.aao2646
+    supports: Obsidian at Olorgesailie, 320,000 to 305,000 years old, from sources 25 to 95 km away; the authors suggest exchange networks.
+    confidence: medium
+    contested: false
+    note: That the stone travelled is secure; that it was exchanged is an inference.
+  - source: >
+      Larsen, M. T. (2015). Ancient Kanesh: A Merchant Colony in Bronze Age
+      Anatolia. Cambridge University Press.
+    supports: About 23,000 tablets from Kanesh, c. 1950-1750 BCE, recording trade, loans, contracts and family letters.
+    confidence: high
+    contested: false
+  - source: "Collon, D. (1987). First Impressions: Cylinder Seals in the Ancient Near East. British Museum Publications."
+    supports: How cylinder seals worked as signatures and guarantees.
+    confidence: high
+    contested: false
+  - source: Schmandt-Besserat, D. (1992). Before Writing, volume 1, From Counting to Cuneiform. University of Texas Press.
+    supports: The proposal that small clay tokens for counting goods were the ancestors of writing.
+    confidence: low
+    contested: true
+    note: >
+      Criticised, among others, by Zimansky, P. (1993), review in Journal of
+      Field Archaeology 20(4), 513.
+
+consensus:
+  - Stone was carried or passed over long distances by at least 300,000 years ago.
+  - By about 1950 BCE, merchants in Anatolia and Assyria used written, sealed and witnessed contracts with people outside their families.
+
+speculation:
+  - That the Olorgesailie obsidian was traded rather than collected.
+  - That clay tokens led to writing.
+  - That trust between strangers first grew out of gift exchange between neighbouring groups.
+
+morphs:
+  - stage: First trace
+    when: About 320,000 years ago
+    change: Valued stone moves farther than one group ranged.
+  - stage: Seal and witness
+    when: From about 5,000 years ago
+    change: A seal on clay, and named witnesses, make a promise checkable.
+  - stage: Honest weights
+    when: Bronze Age onward
+    change: Standard weights and measures, and a duty not to cheat with them.
+  - stage: Today
+    when: Now
+    change: Trust between strangers runs through contracts, courts, reputation systems and code, and more and more of it is checked by machines.
+
+tenet_links:
+  - tradition: Buddhism
+    how_held: Right speech and right livelihood, two parts of the Noble Eightfold Path, rule out lying and dishonest trade.
+    reference: The Noble Eightfold Path
+  - tradition: Christianity
+    how_held: Honest dealing, and hospitality to strangers ("Be not forgetful to entertain strangers", KJV).
+    reference: Hebrews 13:2; Proverbs 11:1
+  - tradition: Confucianism
+    how_held: Xin (trustworthiness, keeping one's word) is one of the five constant virtues.
+    reference: The five constants (wuchang)
+  - tradition: Islam
+    how_held: >
+      Honest weights and measures are a religious duty (Surah al-Mutaffifin
+      warns those who give short measure), and the traveller is among those
+      owed zakat.
+    reference: Qur'an 83:1-3; 9:60
+  - tradition: Judaism
+    how_held: >
+      Honest weights ("thou shalt have a perfect and just weight", KJV) and
+      the command to love the stranger, "for ye were strangers in the land
+      of Egypt".
+    reference: Deuteronomy 25:13-15; Leviticus 19:34
+
+paradox_held:
+  - tension: "Be careful with strangers, and welcome the stranger."
+    held_by: >
+      Judaism and Christianity, which command love of the stranger while
+      counselling prudence; Islam, which counts the traveller among those
+      owed support.
+    note: Caution and welcome are both commanded; neither cancels the other.
+
+restory: >
+  Nearly four thousand years ago, a merchant of Assur loaded donkeys with
+  tin and cloth and walked them over the mountains to Kanesh. He would sell
+  on credit to people he barely knew. So he wrote it all down in clay,
+  sealed it, named the witnesses, and sent a letter home. Trust, it turned
+  out, could be written.
+
+open_questions:
+  - Was the first trust between strangers a trade, a gift or a marriage?
+  - Does trust checked by a machine still count as trust?
+
+checked_on: "2026-09-24"
